@@ -1,0 +1,93 @@
+[
+ {
+  "name": "maccy",
+  "products": [
+   {
+    "name": "Maccy",
+    "path": "@CORPUS@/inputs/maccy/O/Maccy",
+    "unstripped_path": "@CORPUS@/inputs/maccy/O/Maccy.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": true,
+    "mach_o_filetype": 2
+   },
+   {
+    "name": "Autoupdate",
+    "path": "@CORPUS@/inputs/maccy/O/Autoupdate",
+    "unstripped_path": "@CORPUS@/inputs/maccy/O/Autoupdate.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": false,
+    "mach_o_filetype": 6
+   },
+   {
+    "name": "Sparkle",
+    "path": "@CORPUS@/inputs/maccy/O/Sparkle",
+    "unstripped_path": "@CORPUS@/inputs/maccy/O/Sparkle.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": false,
+    "mach_o_filetype": 6
+   },
+   {
+    "name": "Maccy",
+    "path": "@CORPUS@/inputs/maccy/Osize/Maccy",
+    "unstripped_path": "@CORPUS@/inputs/maccy/Osize/Maccy.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": true,
+    "mach_o_filetype": 2
+   }
+  ]
+ },
+ {
+  "name": "stats",
+  "products": [
+   {
+    "name": "Stats",
+    "path": "@CORPUS@/inputs/stats/O/Stats",
+    "unstripped_path": "@CORPUS@/inputs/stats/O/Stats.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": true,
+    "mach_o_filetype": 2
+   },
+   {
+    "name": "Kit",
+    "path": "@CORPUS@/inputs/stats/O/Kit",
+    "unstripped_path": "@CORPUS@/inputs/stats/O/Kit.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": false,
+    "mach_o_filetype": 6
+   },
+   {
+    "name": "Kit",
+    "path": "@CORPUS@/inputs/stats/O-resilient/Kit",
+    "unstripped_path": "@CORPUS@/inputs/stats/O-resilient/Kit.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": false,
+    "mach_o_filetype": 6
+   },
+   {
+    "name": "Net.framework_Versions_A_Net",
+    "path": "@CORPUS@/inputs/stats/O/Net.framework_Versions_A_Net",
+    "unstripped_path": "@CORPUS@/inputs/stats/O/Net.framework_Versions_A_Net.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": false,
+    "mach_o_filetype": 6
+   },
+   {
+    "name": "WidgetsExtension",
+    "path": "@CORPUS@/inputs/stats/O/WidgetsExtension",
+    "unstripped_path": "@CORPUS@/inputs/stats/O/WidgetsExtension.unstripped",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unstripped_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "main_executable": false,
+    "mach_o_filetype": 6
+   }
+  ]
+ }
+]

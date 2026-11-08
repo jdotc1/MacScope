@@ -1,0 +1,32 @@
+meta_information { executable_name: "new-operands-final" executable_id: "synthetic-new-operands-final" architecture_name: "arm64" }
+mnemonic { name: "add" }
+mnemonic { name: "and" }
+mnemonic { name: "mov" }
+mnemonic { name: "nop" }
+mnemonic { name: "ret" }
+mnemonic { name: "sub" }
+expression { type: REGISTER symbol: "w0" }
+expression { type: IMMEDIATE_INT immediate: 1 }
+expression { type: IMMEDIATE_INT immediate: 2 }
+expression { type: IMMEDIATE_INT immediate: 3 }
+operand { expression_index: 0 }
+operand { expression_index: 1 }
+operand { expression_index: 2 }
+operand { expression_index: 3 }
+instruction { address: 8192 mnemonic_index: 2 operand_index: 0 operand_index: 1 raw_bytes: "\040\000\200\122" }
+instruction { address: 8196 mnemonic_index: 0 raw_bytes: "\000\010\000\021" }
+instruction { address: 8200 mnemonic_index: 4 raw_bytes: "\300\003\137\326" }
+basic_block { instruction_index { begin_index: 0 end_index: 3 } }
+instruction { address: 8448 mnemonic_index: 2 operand_index: 0 operand_index: 3 raw_bytes: "\140\000\200\122" }
+instruction { address: 8452 mnemonic_index: 5 raw_bytes: "\000\004\000\121" }
+instruction { address: 8456 mnemonic_index: 4 raw_bytes: "\300\003\137\326" }
+basic_block { instruction_index { begin_index: 3 end_index: 6 } }
+instruction { address: 8704 mnemonic_index: 1 raw_bytes: "\000\000\000\022" }
+instruction { address: 8708 mnemonic_index: 3 raw_bytes: "\037\040\003\325" }
+instruction { address: 8712 mnemonic_index: 3 raw_bytes: "\037\040\003\325" }
+instruction { address: 8716 mnemonic_index: 4 raw_bytes: "\300\003\137\326" }
+basic_block { instruction_index { begin_index: 6 end_index: 10 } }
+flow_graph { basic_block_index: 0 entry_basic_block_index: 0 }
+flow_graph { basic_block_index: 1 entry_basic_block_index: 1 }
+flow_graph { basic_block_index: 2 entry_basic_block_index: 2 }
+call_graph { vertex { address: 8192 mangled_name: "_alpha" } vertex { address: 8448 mangled_name: "_beta" } vertex { address: 8704 mangled_name: "_added" } }

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "xcrun",
+    "swift-demangle",
+    "--compact"
+  ],
+  "stdin": "_$s4Loop21AccentColorControllerCMa\n_$s4Loop0A3AppVwxx\n_$ss17_NativeDictionaryV4copyyyFSi_SdTg5\n_$s4Loop21AccentColorControllerC6color17SwiftUI0C0VvgTm\n___swift_closure_destructor\n___swift_memcpy16_8\n_block_copy_helper\n_main\n__ZN5swift19MutexPlatformHelper7destroyER16os_unfair_lock_s\n_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRyt_Tg5TA\n_$s4math4MathVMa\n_main\n",
+  "stdout": "type metadata accessor for Loop.AccentColorController\ndestroy value witness for Loop.LoopApp\ngeneric specialization <Swift.Int, Swift.Double> of Swift._NativeDictionary.copy() -> ()\nmerged Loop.AccentColorController.color1.getter : SwiftUI.Color\n___swift_closure_destructor\n___swift_memcpy16_8\n_block_copy_helper\n_main\n__ZN5swift19MutexPlatformHelper7destroyER16os_unfair_lock_s\npartial apply forwarder for generic specialization <()> of reabstraction thunk helper <A, B where A: Swift.Sendable, B == Swift.Never> from @escaping @isolated(any) @callee_guaranteed @async () -> (@out A) to @escaping @callee_guaranteed @async () -> (@out A, @error @owned Swift.Error)\ntype metadata accessor for math.Math\n_main\n",
+  "echoed_non_mangled": [
+    "___swift_closure_destructor",
+    "___swift_memcpy16_8",
+    "_block_copy_helper",
+    "_main",
+    "__ZN5swift19MutexPlatformHelper7destroyER16os_unfair_lock_s",
+    "_main"
+  ],
+  "synthetic_suffix_sample": {
+    "stdin": "$sSiWOr\n$sSiWOs\n$sSiWObr\n$sSiTe\n$sSiTe_\n$sSiTe0_\n$sSiTT\n$sSiTR\n$sSiTr\n",
+    "stdout": "outlined retain of Swift.Int\noutlined release of Swift.Int\n$sSiWObr\n$sSiTe\n$sSiTe_\n$sSiTe0_\n$sSiTT\nreabstraction thunk helper from <null node pointer> to Swift.Int\nreabstraction thunk from <null node pointer> to Swift.Int\n"
+  },
+  "bridged_method_sample": {
+    "stdin": "$s1M1fyyFTeo_\n$s1M1fyyFTepnbg_\n",
+    "stdout": "outlined bridged method (o) of M.f() -> ()\noutlined bridged method (pnbg) of M.f() -> ()\n",
+    "grammar_source": "https://github.com/swiftlang/swift/blob/main/lib/Demangling/Demangler.cpp"
+  }
+}

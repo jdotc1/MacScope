@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "macScopeSHA": "synthetic-fixture",
+  "generatedAt": "2026-10-27T00:00:00Z",
+  "original": {
+    "path": "Demo.app/Contents/MacOS/Demo",
+    "fileSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "sliceSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "architecture": "arm64",
+    "uuid": "00000000-0000-0000-0000-000000000001"
+  },
+  "rebuilt": {
+    "path": "Rebuilt.app/Contents/MacOS/Demo",
+    "fileSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "sliceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "architecture": "arm64",
+    "uuid": "00000000-0000-0000-0000-000000000001"
+  },
+  "dimensions": [
+    {
+      "dimension": "linkedDylibs",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": []
+    },
+    {
+      "dimension": "rpaths",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "rpaths-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "exports",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "exports-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "imports",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "imports-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "objcClasses",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "objcClasses-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "objcCategories",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "objcCategories-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "objcProtocols",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "objcProtocols-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "objcMethods",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "objcMethods-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "objcIvars",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "objcIvars-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "objcProperties",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "objcProperties-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "swiftTypes",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "swiftTypes-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "swiftConformances",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "swiftConformances-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "swiftRequirements",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "swiftRequirements-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "swiftFieldRecords",
+      "status": "measured",
+      "matched": 99,
+      "missingInRebuilt": 1,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": 0.99,
+      "items": [
+        {
+          "key": "swiftFieldRecords-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        }
+      ]
+    },
+    {
+      "dimension": "swiftEnumCases",
+      "status": "notMeasured",
+      "notMeasuredReason": "No enum metadata in synthetic input",
+      "matched": 0,
+      "missingInRebuilt": 0,
+      "extraInRebuilt": 0,
+      "differing": 0,
+      "score": null,
+      "items": []
+    },
+    {
+      "dimension": "functions",
+      "status": "measured",
+      "matched": 1,
+      "missingInRebuilt": 3,
+      "extraInRebuilt": 1,
+      "differing": 2,
+      "score": 0.14285714285714285,
+      "items": [
+        {
+          "key": "functions-missingInRebuilt-0",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        },
+        {
+          "key": "functions-missingInRebuilt-1",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        },
+        {
+          "key": "functions-missingInRebuilt-2",
+          "outcome": "missingInRebuilt",
+          "original": "original",
+          "rebuilt": null
+        },
+        {
+          "key": "functions-extraInRebuilt-0",
+          "outcome": "extraInRebuilt",
+          "original": null,
+          "rebuilt": "rebuilt"
+        },
+        {
+          "key": "functions-differing-0",
+          "outcome": "differing",
+          "original": "original",
+          "rebuilt": "rebuilt"
+        },
+        {
+          "key": "functions-differing-1",
+          "outcome": "differing",
+          "original": "original",
+          "rebuilt": "rebuilt"
+        }
+      ]
+    }
+  ],
+  "functionStates": {
+    "stub": 3,
+    "external": 1,
+    "filled": 1,
+    "compiles": 1,
+    "accepted": 1,
+    "unpaired": 0
+  },
+  "externalExcluded": {
+    "functions": 1,
+    "symbols": 1
+  },
+  "bindiff": {
+    "available": false
+  }
+}

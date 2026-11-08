@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "app": {
+    "name": "Demo",
+    "bundleIdentifier": "org.example.Demo",
+    "images": [
+      {
+        "imageName": "Demo",
+        "uuid": "00000000-0000-0000-0000-000000000001",
+        "architecture": "arm64",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  "generatedBy": {
+    "macScopeSHA": "synthetic-fixture",
+    "generatedAt": "2026-10-27T00:00:00Z"
+  },
+  "functions": [
+    {
+      "imageQualifiedAddress": "Demo:0x1000",
+      "functionUUID": "00000000-0000-0000-0000-000000000100",
+      "name": "start",
+      "language": "c",
+      "stubFile": "Sources/start.c",
+      "stubLine": 1,
+      "state": "stub"
+    },
+    {
+      "imageQualifiedAddress": "Demo:0x1010",
+      "functionUUID": "00000000-0000-0000-0000-000000000101",
+      "name": "externalWork",
+      "language": "objc",
+      "stubFile": null,
+      "stubLine": null,
+      "state": "external",
+      "dependencyId": "confirmed-lib"
+    },
+    {
+      "imageQualifiedAddress": "Demo:0x1020",
+      "functionUUID": "00000000-0000-0000-0000-000000000102",
+      "name": "render",
+      "language": "swift",
+      "stubFile": "Sources/render.c",
+      "stubLine": 3,
+      "state": "filled"
+    },
+    {
+      "imageQualifiedAddress": "Demo:0x1030",
+      "functionUUID": "00000000-0000-0000-0000-000000000103",
+      "name": "calculate",
+      "language": "c",
+      "stubFile": "Sources/calculate.c",
+      "stubLine": 4,
+      "state": "compiles"
+    },
+    {
+      "imageQualifiedAddress": "Demo:0x1040",
+      "functionUUID": "00000000-0000-0000-0000-000000000104",
+      "name": "finish",
+      "language": "objc",
+      "stubFile": "Sources/finish.c",
+      "stubLine": 5,
+      "state": "accepted"
+    },
+    {
+      "imageQualifiedAddress": "Demo:0x1050",
+      "functionUUID": "00000000-0000-0000-0000-000000000105",
+      "name": "probableWork",
+      "language": "swift",
+      "stubFile": "Sources/probableWork.c",
+      "stubLine": 6,
+      "state": "stub"
+    },
+    {
+      "imageQualifiedAddress": "Demo:0x1060",
+      "functionUUID": "00000000-0000-0000-0000-000000000106",
+      "name": "candidateWork",
+      "language": "c",
+      "stubFile": "Sources/candidateWork.c",
+      "stubLine": 7,
+      "state": "stub"
+    },
+    {
+      "imageQualifiedAddress": "Demo:0x1000",
+      "functionUUID": "00000000-0000-0000-0000-000000000100",
+      "name": "start",
+      "language": "c",
+      "stubFile": "Sources/start.c",
+      "stubLine": 1,
+      "state": "stub"
+    }
+  ],
+  "resources": [
+    {
+      "compiledPath": "Resources/Compiled/item0",
+      "sourcePath": null,
+      "converter": null,
+      "status": "copied",
+      "equivalence": null
+    },
+    {
+      "compiledPath": "Resources/Compiled/item1",
+      "sourcePath": "Resources/Source/item1",
+      "converter": "fixtureConverter",
+      "status": "converted",
+      "equivalence": {
+        "result": "equal",
+        "receiptPath": "Equivalence/resource1.json"
+      }
+    },
+    {
+      "compiledPath": "Resources/Compiled/item2",
+      "sourcePath": "Resources/Source/item2",
+      "converter": "fixtureConverter",
+      "status": "partial",
+      "equivalence": {
+        "result": "different",
+        "receiptPath": "Equivalence/resource2.json"
+      }
+    },
+    {
+      "compiledPath": "Resources/Compiled/item3",
+      "sourcePath": null,
+      "converter": null,
+      "status": "refused",
+      "equivalence": null
+    },
+    {
+      "compiledPath": "Resources/Compiled/item4",
+      "sourcePath": "Resources/Source/item4",
+      "converter": "fixtureConverter",
+      "status": "converted",
+      "equivalence": {
+        "result": "notChecked",
+        "receiptPath": null
+      }
+    }
+  ]
+}

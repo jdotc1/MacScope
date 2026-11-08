@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "a54-headroom": {
+      "work_root": "{work_root}/lane-ssa-stacksplit",
+      "retained_root": "{work_root}/MacScopeDevLoop.noindex/DerivedData/lane-ssa-stacksplit-57e9d0237336-xcode-9aa9934b563f",
+      "xctestrun_pattern": "Build/Products/*CoreTests*.xctestrun",
+      "developer_dir": "{system_xcode}",
+      "selector": "CoreTests/OperationCoreStackHeadroomTests",
+      "timeout": 120,
+      "grace": 10,
+      "result_path": "{run_root}/result.xcresult",
+      "environment": {
+        "HOME": "~",
+        "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+        "TEST_RUNNER_MACSCOPE_SOURCE_ROOT": "lane-ssa-stacksplit"
+      },
+      "evidence": {
+        "expected_usable_stack_bytes": 524288,
+        "expected_guard": "separate system page",
+        "assertion_source": "MacScope/Tests/CoreTests/OperationCoreStackHeadroomTests.swift",
+        "runtime_proof": "actual pthread stack-size equality and unchanged SSA assertions in the selected test; profile metadata alone is not proof",
+        "budget_basis": "Plan P-PROFILES 2026-10-21 00:54: 30-second internal expectation plus launch overhead; outer safety bound is not a pass criterion"
+      },
+      "pending_owner_decisions": []
+    },
+    "s2-phase-timing": {
+      "work_root": "{work_root}/lane-ssa-lifter",
+      "retained_root": "{work_root}/MacScopeDevLoop.noindex/DerivedData/lane-ssa-lifter-e9a4fd071bc0-xcode-9aa9934b563f",
+      "xctestrun_pattern": "Build/Products/*CoreTests*.xctestrun",
+      "developer_dir": "{system_xcode}",
+      "selector": "CoreTests/MacIRCFGTests/testLibjpegExplicitGraphAcceptanceAndExport",
+      "timeout": 1500,
+      "grace": 30,
+      "result_path": "{run_root}/result.xcresult",
+      "environment": {
+        "HOME": "~",
+        "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+        "TEST_RUNNER_MACSCOPE_SOURCE_ROOT": "lane-ssa-lifter",
+        "TEST_RUNNER_MACSCOPE_SSA_LIFTER": "1",
+        "TEST_RUNNER_MACSCOPE_LIBJPEG_WITNESS": "1",
+        "TEST_RUNNER_MACSCOPE_CFG_OUT": "{run_root}/witness",
+        "TEST_RUNNER_MACSCOPE_WITNESS_SOURCE_HEAD": "{candidate_sha}"
+      },
+      "evidence": {
+        "phases": [
+          "spawn",
+          "first-output",
+          "test-start",
+          "test-end",
+          "exit"
+        ],
+        "identity_binding": [
+          "nonce",
+          "candidate_sha",
+          "selector"
+        ],
+        "runtime_proof": "observed phases from the selected operation; missing observations remain null",
+        "budget_basis": "Plan P-PROFILES 2026-10-21 00:54: outer1500 exceeds XCTest1200 and prior1234.5-second receipt; outer safety bound is not a pass criterion",
+        "internal_xctest_allowance_seconds": 1200
+      },
+      "pending_owner_decisions": [],
+      "test_execution_allowance": 1200
+    }
+  }
+}

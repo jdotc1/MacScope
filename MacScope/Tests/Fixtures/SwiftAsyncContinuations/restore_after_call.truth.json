@@ -1,0 +1,35 @@
+{
+  "callee": 4160,
+  "entryMetadataCount": 2,
+  "instructionWords": [
+    2853569523,
+    2483028031,
+    2852127735,
+    4177527539,
+    268436105,
+    4177528553,
+    2483028030,
+    4177527539,
+    4177528553,
+    268435945,
+    4177528553,
+    2853635062,
+    335544324
+  ],
+  "kind": "restore_after_call",
+  "negative": false,
+  "relationships": [
+    {
+      "callee": 4160,
+      "resume": 4192,
+      "source": 4096,
+      "transfer": 4144
+    }
+  ],
+  "resume": 4192,
+  "resumeMetadataCount": 1,
+  "schemaVersion": 1,
+  "source": 4096,
+  "synthetic": true,
+  "transfer": 4144
+}

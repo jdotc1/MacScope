@@ -1,0 +1,23 @@
+{
+  "callee": 4160,
+  "entryMetadataCount": 2,
+  "instructionWords": [
+    2853569523,
+    2483028031,
+    2852127735,
+    4177527539,
+    268436105,
+    4177528553,
+    2853635062,
+    335544345
+  ],
+  "kind": "wrong_callee",
+  "negative": true,
+  "relationships": [],
+  "resume": 4192,
+  "resumeMetadataCount": 1,
+  "schemaVersion": 1,
+  "source": 4096,
+  "synthetic": true,
+  "transfer": 4124
+}

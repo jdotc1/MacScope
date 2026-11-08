@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "dependencies": [
+    {
+      "name": "Sparkle",
+      "modules": [
+        "Sparkle"
+      ],
+      "bundleIDs": [
+        "org.sparkle-project.Sparkle",
+        "org.andymatuschak.Sparkle"
+      ],
+      "sourceURL": "https://github.com/sparkle-project/Sparkle/blob/2.x/Package.swift",
+      "packageURL": "https://github.com/sparkle-project/Sparkle",
+      "license": "MIT; repository also lists external component licenses",
+      "licenseURL": "https://github.com/sparkle-project/Sparkle/blob/2.x/LICENSE",
+      "bundleSourceURL": "https://sparkle-project.github.io/documentation/upgrading/"
+    },
+    {
+      "name": "swift-collections",
+      "modules": [
+        "Collections",
+        "OrderedCollections",
+        "DequeModule",
+        "HeapModule"
+      ],
+      "bundleIDs": [],
+      "sourceURL": "https://github.com/apple/swift-collections/blob/main/Package.swift",
+      "packageURL": "https://github.com/apple/swift-collections",
+      "license": "Apache-2.0 WITH Swift-exception",
+      "licenseURL": "https://github.com/apple/swift-collections/blob/main/LICENSE.txt"
+    },
+    {
+      "name": "swift-algorithms",
+      "modules": [
+        "Algorithms"
+      ],
+      "bundleIDs": [],
+      "sourceURL": "https://github.com/apple/swift-algorithms/blob/main/Package.swift",
+      "packageURL": "https://github.com/apple/swift-algorithms",
+      "license": "Apache-2.0 WITH Swift-exception",
+      "licenseURL": "https://github.com/apple/swift-algorithms/blob/main/LICENSE.txt"
+    },
+    {
+      "name": "swift-log",
+      "modules": [
+        "Logging"
+      ],
+      "bundleIDs": [],
+      "sourceURL": "https://github.com/apple/swift-log/blob/main/Package.swift",
+      "packageURL": "https://github.com/apple/swift-log",
+      "license": "Apache-2.0",
+      "licenseURL": "https://github.com/apple/swift-log/blob/main/LICENSE.txt"
+    },
+    {
+      "name": "swift-argument-parser",
+      "modules": [
+        "ArgumentParser"
+      ],
+      "bundleIDs": [],
+      "sourceURL": "https://github.com/apple/swift-argument-parser/blob/main/Package.swift",
+      "packageURL": "https://github.com/apple/swift-argument-parser",
+      "license": "Apache-2.0 WITH Swift-exception",
+      "licenseURL": "https://github.com/apple/swift-argument-parser/blob/main/LICENSE.txt"
+    }
+  ]
+}

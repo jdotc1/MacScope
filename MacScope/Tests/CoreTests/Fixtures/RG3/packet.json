@@ -1,0 +1,31 @@
+{
+  "schema": "macscope-rg3-c-bodies-v1",
+  "bodies": [
+    {
+      "image": {
+        "imageSlot": 0,
+        "selectedSliceIndex": 0,
+        "architecture": "arm64",
+        "selectedSliceSHA256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "analysisFingerprintSHA256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "functionUUID": "11111111-2222-3333-4444-555555555555",
+      "address": "0x00000001000004b0",
+      "endAddressExclusive": "0x0000000100000580",
+      "source": "#include <stdint.h>\n#include <math.h>\nstatic inline double __a64_absolute_f64(double a) { return fabs(a); }\nstatic inline float __a64_subtract_f32(float a, float b) { return a - b; }\nint msrg_recovered_11111111222233334444555555555555(float * numbers, int size, float threshold) {\n    int64_t in_x0 = (int64_t)(uintptr_t)numbers;\n    int32_t in_w1 = (int32_t)size;\n    float in_s0 = threshold;\n    double d0_1;\n    double d0_2;\n    double d1_1;\n    float s0_1;\n    float s0_2;\n    float s1_1;\n    float s1_2;\n    uint32_t tmp0;\n    uint32_t tmp1;\n    int64_t tmp10;\n    int32_t tmp11;\n    int32_t tmp12;\n    uint32_t tmp13;\n    uint32_t tmp14;\n    uint32_t tmp15;\n    uint32_t tmp16;\n    uint32_t tmp2;\n    uint32_t tmp3;\n    uint32_t tmp4;\n    uint32_t tmp5;\n    uint32_t tmp6;\n    uint32_t tmp7;\n    int64_t tmp8;\n    int32_t tmp9;\n    int tmp_0;\n    uint32_t w0_1;\n    // entry 0x00000001000004b0; stack frame 0x20 bytes; calls none\n    int32_t local_0;\n    int32_t local_4;\n    float local_8;\n    int32_t local_c;\n    int64_t local_10;\n    int32_t local_1c;\n    local_10 = in_x0; // stack store\n    *(uint32_t *)&(local_c) = in_w1; // stack store\n    local_8 = in_s0; // stack store\n    *(uint32_t *)&(local_4) = 0x0; // stack store\n    goto L_1000004c8; // unconditional branch\n    L_1000004c8:\n    tmp0 = *(uint32_t *)&(local_4); // stack load\n    tmp1 = *(uint32_t *)&(local_c); // stack load\n    tmp2 = tmp0 - tmp1;\n    if (tmp0 >= tmp1) goto L_10000056c; // conditional branch\n    goto L_1000004dc; // unconditional branch\n    L_1000004dc:\n    tmp3 = *(uint32_t *)&(local_4); // stack load\n    tmp4 = tmp3 + 0x1;\n    *(uint32_t *)&(local_0) = tmp4; // stack store\n    goto L_1000004ec; // unconditional branch\n    L_1000004ec:\n    tmp5 = *(uint32_t *)&(local_0); // stack load\n    tmp6 = *(uint32_t *)&(local_c); // stack load\n    tmp7 = tmp5 - tmp6;\n    if (tmp5 >= tmp6) goto L_100000558; // conditional branch\n    goto L_100000500; // unconditional branch\n    L_100000500:\n    tmp8 = local_10; // stack load\n    tmp9 = local_4; // stack load\n    s0_1 = *(float *)(tmp8 + (tmp9 << 0x2));\n    tmp10 = local_10; // stack load\n    tmp11 = local_0; // stack load\n    s1_1 = *(float *)(tmp10 + (tmp11 << 0x2));\n    s0_2 = __a64_subtract_f32(s0_1, s1_1);\n    d0_1 = (double)s0_2;\n    d0_2 = __a64_absolute_f64(d0_1);\n    s1_2 = local_8; // stack load\n    d1_1 = (double)s1_2;\n    tmp_0 = (double)(d0_2) < (double)(d1_1); // compare to bool\n    if (tmp_0 == 0x0) goto L_100000544; // conditional branch\n    goto L_100000538; // unconditional branch\n    L_100000538:\n    tmp12 = 0x1;\n    *(uint32_t *)&(local_1c) = tmp12; // stack store\n    goto L_100000574; // unconditional branch\n    L_100000544:\n    goto L_100000548; // unconditional branch\n    L_100000548:\n    tmp13 = *(uint32_t *)&(local_0); // stack load\n    tmp14 = tmp13 + 0x1;\n    *(uint32_t *)&(local_0) = tmp14; // stack store\n    goto L_1000004ec; // unconditional branch\n    L_100000558:\n    goto L_10000055c; // unconditional branch\n    L_10000055c:\n    tmp15 = *(uint32_t *)&(local_4); // stack load\n    tmp16 = tmp15 + 0x1;\n    *(uint32_t *)&(local_4) = tmp16; // stack store\n    goto L_1000004c8; // unconditional branch\n    L_10000056c:\n    *(uint32_t *)&(local_1c) = 0x0; // stack store\n    goto L_100000574; // unconditional branch\n    L_100000574:\n    w0_1 = *(uint32_t *)&(local_1c); // stack load\n    return (int)w0_1; // return\n}",
+      "emittedSymbol": "msrg_recovered_11111111222233334444555555555555",
+      "prototypeAuthority": "{\"kind\":\"authored-signature\",\"reference\":\"synthetic-test-only\"}",
+      "rules": [
+        "EXPLICIT-SOURCE-PROTOTYPE",
+        "EXPLICIT-ABI-BINDINGS",
+        "TYPED-STORAGE-DECLARATIONS",
+        "DEAD-BALANCED-FRAME-BOOKKEEPING",
+        "DECODED-W0-RETURN-SLOT",
+        "SCALAR-NUMERIC-HELPERS",
+        "CALLER-CHOSEN-OUTPUT-SYMBOL",
+        "CAPTURE-BINDING-REUSED"
+      ],
+      "producerReceipt": "synthetic-producer-boundary-fixture"
+    }
+  ]
+}

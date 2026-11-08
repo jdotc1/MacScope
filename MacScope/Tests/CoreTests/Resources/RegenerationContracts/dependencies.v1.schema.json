@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "macscope:dependencies:1",
+  "title": "DEPENDENCIES.json v1 (RG4)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "dependencies"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "version",
+          "versionRange",
+          "evidence",
+          "confidence",
+          "functions",
+          "emitAs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "embeddedFramework",
+              "systemFramework",
+              "staticLibrary",
+              "swiftPackage",
+              "unknownThirdParty"
+            ]
+          },
+          "version": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "null when unknown, never guessed"
+          },
+          "versionRange": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "signal",
+                "detail",
+                "location"
+              ],
+              "properties": {
+                "signal": {
+                  "enum": [
+                    "loadCommand",
+                    "bundleInfoPlist",
+                    "objcClassPrefix",
+                    "swiftModuleName",
+                    "byteSignature",
+                    "string"
+                  ]
+                },
+                "detail": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "confidence": {
+            "enum": [
+              "confirmed",
+              "probable",
+              "candidate"
+            ]
+          },
+          "functions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "imageQualifiedAddress"
+            }
+          },
+          "emitAs": {
+            "enum": [
+              "swiftPackage",
+              "frameworkReference",
+              "systemSDK",
+              "none"
+            ]
+          },
+          "packageURL": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "required when emitAs is swiftPackage"
+          },
+          "requirement": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "required when emitAs is swiftPackage"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "emitAs": {
+                  "const": "swiftPackage"
+                }
+              },
+              "required": [
+                "emitAs"
+              ]
+            },
+            "then": {
+              "properties": {
+                "packageURL": {
+                  "type": "string"
+                },
+                "requirement": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "packageURL",
+                "requirement"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

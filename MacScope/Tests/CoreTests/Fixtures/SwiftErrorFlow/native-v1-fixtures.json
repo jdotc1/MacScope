@@ -1,0 +1,470 @@
+{
+  "donorCommit": "cdd8cbee7d8ef8241407c86aa4cfd38c574e65d7",
+  "donorModel": "swift-sync-error-edges-v16",
+  "nativeModel": "macscope-swift-error-flow-native-v1",
+  "scope": "Literal shared structural edge projections only; not v16 parity.",
+  "cases": [
+    {
+      "name": "cbz",
+      "request": {
+        "slice": {
+          "artifactSHA256": "71cae548916df2f1a6a430e8e2539850710387eb4a0c91c6a6889ffc3c92e00a",
+          "sliceOffset": 0,
+          "sliceByteCount": 4211,
+          "cpuType": 16777228,
+          "cpuSubtype": 0,
+          "littleEndian": true
+        },
+        "code": {
+          "baseAddress": 4294971392,
+          "sliceRelativeFileOffset": 4096,
+          "sectionOrdinal": 1,
+          "hasEmbeddedData": false,
+          "hasRelocations": false,
+          "words": [
+            2483027976,
+            3019898997,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104
+          ]
+        },
+        "functions": [
+          {
+            "start": 4294971392,
+            "endExclusive": 4294971424,
+            "boundarySource": "lc_function_starts"
+          },
+          {
+            "start": 4294971424,
+            "endExclusive": 4294971428,
+            "boundarySource": "lc_function_starts"
+          }
+        ],
+        "symbols": [
+          {
+            "address": 4294971392,
+            "name": "_$s4Demo6handleyS2iF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          },
+          {
+            "address": 4294971424,
+            "name": "_$s4Demo5parseyS2iKF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          }
+        ]
+      },
+      "expected": {
+        "edgeCount": 1,
+        "successOffset": 16,
+        "errorOffset": 8
+      },
+      "donorStatus": "recovered_candidate",
+      "donorReason": null
+    },
+    {
+      "name": "cbnz",
+      "request": {
+        "slice": {
+          "artifactSHA256": "b2f80a5f1ded98a1d70f47574879142af845f0b25a86432328aa79b5bafbc00e",
+          "sliceOffset": 0,
+          "sliceByteCount": 4211,
+          "cpuType": 16777228,
+          "cpuSubtype": 0,
+          "littleEndian": true
+        },
+        "code": {
+          "baseAddress": 4294971392,
+          "sliceRelativeFileOffset": 4096,
+          "sectionOrdinal": 1,
+          "hasEmbeddedData": false,
+          "hasRelocations": false,
+          "words": [
+            2483027976,
+            3036676213,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104
+          ]
+        },
+        "functions": [
+          {
+            "start": 4294971392,
+            "endExclusive": 4294971424,
+            "boundarySource": "lc_function_starts"
+          },
+          {
+            "start": 4294971424,
+            "endExclusive": 4294971428,
+            "boundarySource": "lc_function_starts"
+          }
+        ],
+        "symbols": [
+          {
+            "address": 4294971392,
+            "name": "_$s4Demo6handleyS2iF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          },
+          {
+            "address": 4294971424,
+            "name": "_$s4Demo5parseyySiKF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          }
+        ]
+      },
+      "expected": {
+        "edgeCount": 1,
+        "successOffset": 8,
+        "errorOffset": 16
+      },
+      "donorStatus": "recovered_candidate",
+      "donorReason": null
+    },
+    {
+      "name": "cmp_eq",
+      "request": {
+        "slice": {
+          "artifactSHA256": "2e7decb5b28ed0121dc8793d55469d6e84e47da4c6fa21f67ceab1fd70ae5114",
+          "sliceOffset": 0,
+          "sliceByteCount": 4209,
+          "cpuType": 16777228,
+          "cpuSubtype": 0,
+          "littleEndian": true
+        },
+        "code": {
+          "baseAddress": 4294971392,
+          "sliceRelativeFileOffset": 4096,
+          "sectionOrdinal": 1,
+          "hasEmbeddedData": false,
+          "hasRelocations": false,
+          "words": [
+            2483027976,
+            4043309759,
+            1409286240,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104
+          ]
+        },
+        "functions": [
+          {
+            "start": 4294971392,
+            "endExclusive": 4294971424,
+            "boundarySource": "lc_function_starts"
+          },
+          {
+            "start": 4294971424,
+            "endExclusive": 4294971428,
+            "boundarySource": "lc_function_starts"
+          }
+        ],
+        "symbols": [
+          {
+            "address": 4294971392,
+            "name": "_$s4Demo6handleyS2iF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          },
+          {
+            "address": 4294971424,
+            "name": "_$s4Demo5parseyyKF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          }
+        ]
+      },
+      "expected": {
+        "edgeCount": 1,
+        "successOffset": 20,
+        "errorOffset": 12
+      },
+      "donorStatus": "recovered_candidate",
+      "donorReason": null
+    },
+    {
+      "name": "cmp_ne",
+      "request": {
+        "slice": {
+          "artifactSHA256": "8adc9846e4a9ac2349e3fba00713bd5e6be6f716033e0a88c31d4dd6ec462ef6",
+          "sliceOffset": 0,
+          "sliceByteCount": 4210,
+          "cpuType": 16777228,
+          "cpuSubtype": 0,
+          "littleEndian": true
+        },
+        "code": {
+          "baseAddress": 4294971392,
+          "sliceRelativeFileOffset": 4096,
+          "sectionOrdinal": 1,
+          "hasEmbeddedData": false,
+          "hasRelocations": false,
+          "words": [
+            2483027976,
+            4043309759,
+            1409286241,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104
+          ]
+        },
+        "functions": [
+          {
+            "start": 4294971392,
+            "endExclusive": 4294971424,
+            "boundarySource": "lc_function_starts"
+          },
+          {
+            "start": 4294971424,
+            "endExclusive": 4294971428,
+            "boundarySource": "lc_function_starts"
+          }
+        ],
+        "symbols": [
+          {
+            "address": 4294971392,
+            "name": "_$s4Demo6handleyS2iF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          },
+          {
+            "address": 4294971424,
+            "name": "_$s4Demo5parseSiyKF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          }
+        ]
+      },
+      "expected": {
+        "edgeCount": 1,
+        "successOffset": 12,
+        "errorOffset": 20
+      },
+      "donorStatus": "recovered_candidate",
+      "donorReason": null
+    },
+    {
+      "name": "narrow_refused",
+      "request": {
+        "slice": {
+          "artifactSHA256": "efbcb7df3e5b0d48371b966f7948fb3f06f41f313c9d24d7306b9eabba836796",
+          "sliceOffset": 0,
+          "sliceByteCount": 4211,
+          "cpuType": 16777228,
+          "cpuSubtype": 0,
+          "littleEndian": true
+        },
+        "code": {
+          "baseAddress": 4294971392,
+          "sliceRelativeFileOffset": 4096,
+          "sectionOrdinal": 1,
+          "hasEmbeddedData": false,
+          "hasRelocations": false,
+          "words": [
+            2483027976,
+            872415349,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104
+          ]
+        },
+        "functions": [
+          {
+            "start": 4294971392,
+            "endExclusive": 4294971424,
+            "boundarySource": "lc_function_starts"
+          },
+          {
+            "start": 4294971424,
+            "endExclusive": 4294971428,
+            "boundarySource": "lc_function_starts"
+          }
+        ],
+        "symbols": [
+          {
+            "address": 4294971392,
+            "name": "_$s4Demo6handleyS2iF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          },
+          {
+            "address": 4294971424,
+            "name": "_$s4Demo5parseyS2iKF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          }
+        ]
+      },
+      "expected": {
+        "edgeCount": 0,
+        "successOffset": null,
+        "errorOffset": null
+      },
+      "donorStatus": "declined",
+      "donorReason": "narrow_error_test"
+    },
+    {
+      "name": "typed_refused",
+      "request": {
+        "slice": {
+          "artifactSHA256": "a00a0e0aeca650a1b207c18a3012c84cb53e68f766766b808b7240538ae077e7",
+          "sliceOffset": 0,
+          "sliceByteCount": 4221,
+          "cpuType": 16777228,
+          "cpuSubtype": 0,
+          "littleEndian": true
+        },
+        "code": {
+          "baseAddress": 4294971392,
+          "sliceRelativeFileOffset": 4096,
+          "sectionOrdinal": 1,
+          "hasEmbeddedData": false,
+          "hasRelocations": false,
+          "words": [
+            2483027976,
+            3019898997,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104
+          ]
+        },
+        "functions": [
+          {
+            "start": 4294971392,
+            "endExclusive": 4294971424,
+            "boundarySource": "lc_function_starts"
+          },
+          {
+            "start": 4294971424,
+            "endExclusive": 4294971428,
+            "boundarySource": "lc_function_starts"
+          }
+        ],
+        "symbols": [
+          {
+            "address": 4294971392,
+            "name": "_$s4Demo6handleyS2iF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          },
+          {
+            "address": 4294971424,
+            "name": "_$s4Demo5parseyS2iAA5FaultOYKF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          }
+        ]
+      },
+      "expected": {
+        "edgeCount": 0,
+        "successOffset": null,
+        "errorOffset": null
+      },
+      "donorStatus": "declined",
+      "donorReason": "callee_declaration_outside_subset"
+    },
+    {
+      "name": "clobber_refused",
+      "request": {
+        "slice": {
+          "artifactSHA256": "f991a365bad8fcd8f2273cbd1d7b76f855aeadcbb4e576543742787aa5be520a",
+          "sliceOffset": 0,
+          "sliceByteCount": 4211,
+          "cpuType": 16777228,
+          "cpuSubtype": 0,
+          "littleEndian": true
+        },
+        "code": {
+          "baseAddress": 4294971392,
+          "sliceRelativeFileOffset": 4096,
+          "sectionOrdinal": 1,
+          "hasEmbeddedData": false,
+          "hasRelocations": false,
+          "words": [
+            2483027976,
+            2852127733,
+            3019898997,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104,
+            3596551104
+          ]
+        },
+        "functions": [
+          {
+            "start": 4294971392,
+            "endExclusive": 4294971424,
+            "boundarySource": "lc_function_starts"
+          },
+          {
+            "start": 4294971424,
+            "endExclusive": 4294971428,
+            "boundarySource": "lc_function_starts"
+          }
+        ],
+        "symbols": [
+          {
+            "address": 4294971392,
+            "name": "_$s4Demo6handleyS2iF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          },
+          {
+            "address": 4294971424,
+            "name": "_$s4Demo5parseyS2iKF",
+            "nType": 15,
+            "nDesc": 0,
+            "sectionOrdinal": 1
+          }
+        ]
+      },
+      "expected": {
+        "edgeCount": 0,
+        "successOffset": null,
+        "errorOffset": null
+      },
+      "donorStatus": "declined",
+      "donorReason": "error_value_clobbered"
+    }
+  ]
+}

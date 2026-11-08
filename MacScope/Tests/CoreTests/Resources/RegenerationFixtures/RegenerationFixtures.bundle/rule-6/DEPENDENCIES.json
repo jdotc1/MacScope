@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "dependencies": [
+    {
+      "id": "confirmed-lib",
+      "name": "Confirmed Library",
+      "kind": "staticLibrary",
+      "version": null,
+      "versionRange": null,
+      "evidence": [
+        {
+          "signal": "byteSignature",
+          "detail": "synthetic fixture",
+          "location": "Demo:0x1010"
+        }
+      ],
+      "confidence": "confirmed",
+      "functions": [],
+      "emitAs": "none"
+    },
+    {
+      "id": "probable-lib",
+      "name": "Probable Library",
+      "kind": "staticLibrary",
+      "version": null,
+      "versionRange": null,
+      "evidence": [
+        {
+          "signal": "byteSignature",
+          "detail": "synthetic fixture",
+          "location": "Demo:0x1050"
+        }
+      ],
+      "confidence": "probable",
+      "functions": [
+        "Demo:0x1050"
+      ],
+      "emitAs": "none"
+    },
+    {
+      "id": "candidate-lib",
+      "name": "Candidate Library",
+      "kind": "staticLibrary",
+      "version": null,
+      "versionRange": null,
+      "evidence": [
+        {
+          "signal": "byteSignature",
+          "detail": "synthetic fixture",
+          "location": "Demo:0x1060"
+        }
+      ],
+      "confidence": "candidate",
+      "functions": [
+        "Demo:0x1060"
+      ],
+      "emitAs": "none"
+    }
+  ]
+}

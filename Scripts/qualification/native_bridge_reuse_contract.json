@@ -1,0 +1,538 @@
+{
+  "entry_key": "20175d9696239ce1e83d9f7dbb0ea61e3ebabeb38176a3871b601ff93c38de74",
+  "materialization_manifest_sha256": "0f34a8c0f75746e8eecacc4d96860e7a95a14fb2a7925d6f2e51ba79265faa13",
+  "reviewed_transport_records": {
+    "Scripts/native-decompiler-xpc/native_bridge_cache_payload.py": [
+      {
+        "blob_oid": "004d87d5bda3e1a948e144761051d7b7284eccd1",
+        "mode": "100644",
+        "path": "Scripts/native-decompiler-xpc/native_bridge_cache_payload.py",
+        "sha256": "ad91347bf1d292534138c47386940937e09408bac23da58b6819e76721d5e215",
+        "size": 15915
+      }
+    ],
+    "Scripts/native-decompiler-xpc/native_decompiler_source_identity.py": [
+      {
+        "blob_oid": "b14ae0101e3bc6fbd668ccf9ba49ef0e8b19b9e1",
+        "mode": "100644",
+        "path": "Scripts/native-decompiler-xpc/native_decompiler_source_identity.py",
+        "sha256": "5624178237fd28b09e7d3e504b03fc692cb1868a6ad4775efed5ad0ce52b1509",
+        "size": 12628
+      }
+    ],
+    "Scripts/qualification/dependency_cache.py": [
+      {
+        "blob_oid": "91d5afcde101cc792dde07c0837fae4c4ae55bb9",
+        "mode": "100644",
+        "path": "Scripts/qualification/dependency_cache.py",
+        "sha256": "9a081c7af5621cc8e8d0e717845ea8dc2bcc00229aa9615f906ca50e6c64914a",
+        "size": 50402
+      }
+    ],
+    "Scripts/qualification/dev_dependency_cache.py": [
+      {
+        "blob_oid": "cdafddd1a89955a76584ad9aceef9b49980c24d4",
+        "mode": "100755",
+        "path": "Scripts/qualification/dev_dependency_cache.py",
+        "sha256": "97df88b4c8dee1bcdd7e7e8bfe0d69e2ea523307433450711b7e23392916b630",
+        "size": 67816
+      },
+      {
+        "blob_oid": "3b64cf477ce7d9e8ec7a1bd14bf1ec10d5b54091",
+        "mode": "100755",
+        "path": "Scripts/qualification/dev_dependency_cache.py",
+        "sha256": "2ab26a5696bec068c70c1b425864119fa83c247222f10a5ef6138c8b41a60ef7",
+        "size": 69558
+      },
+      {
+        "blob_oid": "47475849a7be2c7ba3f4e6ec2245f7cc6f544b4e",
+        "mode": "100755",
+        "path": "Scripts/qualification/dev_dependency_cache.py",
+        "sha256": "78ac8b982f551c8deee49ef7dcc565a3d34b9a073eeca1c3ce90675f1b697eed",
+        "size": 84663
+      },
+      {
+        "blob_oid": "9013517c10042db9df2e6142b0acb11cf42cf9eb",
+        "mode": "100755",
+        "path": "Scripts/qualification/dev_dependency_cache.py",
+        "sha256": "03798b6ce1fcefb916eb4975756b689fbcaf7558663dfd0d2ad5ffdbd61be28a",
+        "size": 88251
+      },
+      {
+        "blob_oid": "2d4a62ec9dd615ac03a781d183e1ca4a4ff31e27",
+        "mode": "100755",
+        "path": "Scripts/qualification/dev_dependency_cache.py",
+        "sha256": "7fe6630c6c525835ca3277091a96421b99d44dc62d1b44b9e2ae30a22b13636f",
+        "size": 93978
+      }
+    ]
+  },
+  "schema_version": 2,
+  "source_records": [
+    {
+      "blob_oid": "23ec2317ebf4e2d7503ddc9b5410fa5cd4ea9e77",
+      "mode": "100644",
+      "path": "Scripts/native-decompiler-direct/sleigh_package.py",
+      "sha256": "08e42e585dda305ee24d080aa371df2071105c4d6590c06438eacda2e23f8254",
+      "size": 39022
+    },
+    {
+      "blob_oid": "262aeefbf9bfe7af7e7b1d28dc4e369562bd0aa6",
+      "mode": "100755",
+      "path": "Scripts/native-decompiler-direct/verify_sleigh_package.py",
+      "sha256": "ed29c20df957fae7c27d2318d0e2f932d9c4c0acd45b022a37922975de9ccf9a",
+      "size": 7582
+    },
+    {
+      "blob_oid": "911b2f5b614b534511d2e89bc61e0e66b6f00e2f",
+      "mode": "100755",
+      "path": "Scripts/native-decompiler-xpc/build_native_bridge.sh",
+      "sha256": "11d29d5f0157e56227abec8f149bd5160dd177177a5b3150bff330e970d5a83c",
+      "size": 17074
+    },
+    {
+      "blob_oid": "dee66094a17a7ac152b867b59d86dbbde405c7e8",
+      "mode": "100644",
+      "path": "Scripts/native-decompiler-xpc/native_bridge_cache_payload.py",
+      "sha256": "61ebd638d7dd71b9f34dfc584978ae503ef4de20e9391b0851cacf9dc70ee6da",
+      "size": 14110
+    },
+    {
+      "blob_oid": "7734e5049266a96ff912d42ac8f885b7adeeca7b",
+      "mode": "100644",
+      "path": "Scripts/native-decompiler-xpc/native_decompiler_source_identity.py",
+      "sha256": "e6db599cb50adb47d4f78fb57519ddbc86822c095f159100881140d6938d3490",
+      "size": 12021
+    },
+    {
+      "blob_oid": "9d1c6f746dc073f240dd78f7035e78fa87790dc5",
+      "mode": "100644",
+      "path": "Scripts/qualification/dependency_cache.py",
+      "sha256": "dc007176cedb1f6c5df43212f8de60abf057b52140c31f1eab03be7fe1a9e3ef",
+      "size": 44159
+    },
+    {
+      "blob_oid": "c8d23961e30d3b19a69401dfe957306220f83715",
+      "mode": "100755",
+      "path": "Scripts/qualification/dev_dependency_cache.py",
+      "sha256": "94020106969bb9dee5fbf126261f08a26e6ecdc4eb3b3f55621db18a50f12438",
+      "size": 47869
+    },
+    {
+      "blob_oid": "c8064ce6deb3551d809404a8ad2a6f97b7a90a1b",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/CMakeLists.txt",
+      "sha256": "1b9b1dbc4f96d3525204f48b04e54cfb08e0c78d95ed6e48ecbccace90ab268e",
+      "size": 39714
+    },
+    {
+      "blob_oid": "e9cfe2e8bef0f85684174cc99d993fe72ea8a83b",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/README.md",
+      "sha256": "9b7b4d2c5cc6e0d92d36b5a82a2271a06c81b12f77d14e709707c8aa8a5b595b",
+      "size": 5906
+    },
+    {
+      "blob_oid": "5f4a3eb5da06e7d75b60fab9b03da1c0ad731773",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/include/MacScopeNativeDecompiler/Backend.hpp",
+      "sha256": "c7009680f63537537e3a5f2380216e191383ca7e0d60ff58fe6a31c981818144",
+      "size": 6299
+    },
+    {
+      "blob_oid": "2c747a4aa01b527b33d5a07a11ece80d943f6c35",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/include/MacScopeNativeDecompiler/GhidraProvider.hpp",
+      "sha256": "5f1d6a46cacb0f0893821b5e165d323b2cafdf5358a277c829147930c3db683e",
+      "size": 1031
+    },
+    {
+      "blob_oid": "afb48ec1db30ba51b6a1399146c7d265d71bb4cd",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/include/MacScopeNativeDecompiler/InputModel.hpp",
+      "sha256": "e010fe0759b2e42084ff90007063b3d4a1f56a04f87c16011e3fc3b2e4ea13b0",
+      "size": 18018
+    },
+    {
+      "blob_oid": "d3d904f97525e040fa34ffaf30c9c812058d6a64",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/include/MacScopeNativeDecompiler/OutputModel.hpp",
+      "sha256": "b14413f4227c14710a943ef4748f6518175237bb76d16dece5edb231a3298eea",
+      "size": 14073
+    },
+    {
+      "blob_oid": "a03fcb96ca10eb259639645b503160bb9778ac9e",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/include/MacScopeNativeDecompiler/PcodeOpcodeVocabulary.def",
+      "sha256": "a2fd21ceddcc8153c3e28818736d074e9c54f1c004237f61f4ca9a52bd72e198",
+      "size": 7703
+    },
+    {
+      "blob_oid": "32e1de448d14909cd4c6d02b72030970d4ef1cce",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/probes/RelocatableProviderLinkProbe.cpp",
+      "sha256": "b3b9be50741774eaa879dc978f1f1199718e990d8545dbf50ecb2d0a5a29128e",
+      "size": 2923
+    },
+    {
+      "blob_oid": "0e6b7edf5dcaab542a38c4554dca54e833776c39",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/probes/SleighDecompApiProbe.cpp",
+      "sha256": "f8ce1ad1a9590fa4e05219913c7ca63fa3aabb0fc1e5b8909247a47d668d43ae",
+      "size": 1019
+    },
+    {
+      "blob_oid": "173c8fd5542d1f0b03f00756ca9b87b1dd44878c",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/Backend.cpp",
+      "sha256": "adf3f05c4e48ecd4f03dede64132ba651354f6fa7cb62a50699b3769db020b92",
+      "size": 24099
+    },
+    {
+      "blob_oid": "412a90cb06021353946e809136bb6be61bb3a4be",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/BlockPartition.cpp",
+      "sha256": "42973089ea14dfc3a46f17c9d383435d9101c32f6f2e79e5c6cbd0eb39685c9e",
+      "size": 16382
+    },
+    {
+      "blob_oid": "b6e16738a06da6bf8a002472b81608f24dc5f5f7",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/BlockPartition.hpp",
+      "sha256": "a71255f60e74e3d38f9c3b298e9530818166040e61b77c5ca31955bfb2db3f54",
+      "size": 1623
+    },
+    {
+      "blob_oid": "3e5faa6488e5946d4488f60ecf9797e626e6a804",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/BoundedUTF8StreamBuffer.cpp",
+      "sha256": "307f353461c48f257afc556930ce50ec78d1b23a2dfe04af633b452b2b1ef0e4",
+      "size": 2128
+    },
+    {
+      "blob_oid": "72e3a7c7ca2dc0de45e48fcb8626f8eae94da437",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/BoundedUTF8StreamBuffer.hpp",
+      "sha256": "7fe8dc536ee0c1b2bfcc6ffaa4428ae3e0300629cc38c1619b91106ec36b1398",
+      "size": 689
+    },
+    {
+      "blob_oid": "eb456f30988a0ab7222e35360c8de122b92eddf6",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/CanonicalRequest.cpp",
+      "sha256": "49cdc9f620710d3fa77b9ffcd7134df6354f7295e7ca498704d9ae4a8511ed8d",
+      "size": 35364
+    },
+    {
+      "blob_oid": "c2951413b1dbea94f9aa1fbdd43c5aa4d97a9974",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/CanonicalRequest.hpp",
+      "sha256": "f4d1fd17f101a8c86a50ba7d61887c0f90994567a5fdf25dafec43e7622ccd5b",
+      "size": 1311
+    },
+    {
+      "blob_oid": "2b171d557b18650bec1a30486336e1ebbe1f237b",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/DefinitionIdentity.hpp",
+      "sha256": "b5ecc0556a8cd15e62fd416c87d125779399b8a023dd8bef88264e7fae441a7b",
+      "size": 998
+    },
+    {
+      "blob_oid": "fea8f98b7a9a6e71fb5f6cb39263e32f8b566b20",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraArchitecture.cpp",
+      "sha256": "b4b3e0b4eacb58e7e169317ced4f1a1f4bd80ea4bfdc0707ec7eb249e82afcff",
+      "size": 5399
+    },
+    {
+      "blob_oid": "5d5d02b0d37764874a3102faccf00c13759daad1",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraArchitectureInternal.hpp",
+      "sha256": "df256d97ee2e96c5a10d5ce0b7d2e9e93d31a52e0428c0844a227e5549b1770a",
+      "size": 3066
+    },
+    {
+      "blob_oid": "85562042d5007dcad30fcb6b1aa1092507be0750",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraBlockPartition.cpp",
+      "sha256": "53212e82d6669239b6c444ebb43ce27037e360ca022852641cb2af257f878c67",
+      "size": 3796
+    },
+    {
+      "blob_oid": "0faeede9f0a81e810f4c3151106db12e7d63bd6e",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraBlockPartition.hpp",
+      "sha256": "13b4f58bea802f9cc77d4be23c86074527404db2143b08b51c65696e4f87ed8a",
+      "size": 774
+    },
+    {
+      "blob_oid": "688ae7e5d513ab1ade462e988e510ba479a93de4",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraBuildIdentity.hpp.in",
+      "sha256": "588ed2079fcef662a4877906285ad533913aa1cc5f190e06d977be08c92d937d",
+      "size": 1886
+    },
+    {
+      "blob_oid": "68e45b3801402a6b3133a121dbadc8a0df776b67",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraLoadImage.cpp",
+      "sha256": "05114e673396db02e8869cbc0dc2e9a9d36c819d27a3f3349444533468d57b49",
+      "size": 4439
+    },
+    {
+      "blob_oid": "afb22667c01fd49980d189935a7df0c211dc157c",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraPackageAttestation.cpp",
+      "sha256": "e9a0052638e5580cfdc92e5580a1d18abe2c70dd3a216abc4ea85ffe2d2fffe7",
+      "size": 55389
+    },
+    {
+      "blob_oid": "7c10b25ced63a6933df85f3fe9d3bc02116bff0b",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraPackageAttestation.hpp",
+      "sha256": "805bc72b0264fca597393878656f624b8e7fc9f8469c57f1f2e3cca7b2732ccb",
+      "size": 3817
+    },
+    {
+      "blob_oid": "422bc7bfc38f3d333a3daf4dbb8f29fc11b32453",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraProvider.cpp",
+      "sha256": "e116915079757a9fc4c57039275dfd15d4bd7cc2aa1a20cfdd90559c9d816157",
+      "size": 289613
+    },
+    {
+      "blob_oid": "888ab2fd0fc82df4340b039576d5744346c43023",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraRuntime.cpp",
+      "sha256": "13361c9b4c22f6e1763532bae98fab161f35598b22d4c6a943faafe71785b21c",
+      "size": 7429
+    },
+    {
+      "blob_oid": "4bd05b1464c65568d3d3199ae2751d1674633433",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraRuntimeInternal.hpp",
+      "sha256": "513fd52b24487b0f2f8a192de040892da0c1006edc23fc980f6e6a5ba6a0fc68",
+      "size": 3468
+    },
+    {
+      "blob_oid": "a81bd4eeedbb09270e70ef9a218a0ecb9ece2be1",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/GhidraVariableIdentity.hpp",
+      "sha256": "c7baa3ecd23bfac352cc59a33842243346ea10ad4ad973a8ff1bb9e6091c4dcb",
+      "size": 3876
+    },
+    {
+      "blob_oid": "625cf189f4ae74355ee1af9c8292208e8483df0f",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/InputModel.cpp",
+      "sha256": "61c05812fe153c879fc6703b8db62dcce2209208d2037ee120b3ab81afaec965",
+      "size": 51884
+    },
+    {
+      "blob_oid": "150cf9ca8e5dcfc6b7f2fc13254bba00271e97f4",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/OutputModel.cpp",
+      "sha256": "77d5bd92baab152d41c1460a32ba3ccc49690a5d7a92544d068a8f8bdde2cdee",
+      "size": 76825
+    },
+    {
+      "blob_oid": "c21d617389c74884818ed30aedbbed692b938a39",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/PcodeOpcodeVocabulary.hpp",
+      "sha256": "37221c34c1489fac093f1e8eb3e7796e7b08a47d68707c7ea222c235057348d5",
+      "size": 1220
+    },
+    {
+      "blob_oid": "6a140bc019c633669a4c57683d33dd79d3fa8ee6",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/src/TextValidation.hpp",
+      "sha256": "acc24a4a9d6676c65c65b21da8735c94d6b65a7390b0200fbbcff8b31967850a",
+      "size": 2723
+    },
+    {
+      "blob_oid": "3ea856b445541e26aa77be9db5751a642ef0ffb4",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/CP4ContractCorpus.hpp",
+      "sha256": "f61df528df36d3013b1afa82d610e840f1198e4df98598780378f5d6d564f80f",
+      "size": 9319
+    },
+    {
+      "blob_oid": "bc3ac218410470ff936fc723e9d723aa2fda927d",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/CP4DTOTestWriter.hpp",
+      "sha256": "144c2fb376543ebc9be4d31812510a71bb4ecd055cafb493e28678d34be99ec4",
+      "size": 20963
+    },
+    {
+      "blob_oid": "6757ea66a62c9c62c9fad714233e5d2fad696100",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/CanonicalRequestTests.cpp",
+      "sha256": "c0c58785fbd5a3edfca60a7b11d2c330858270b2150a06325a46609a60fe9aa6",
+      "size": 40124
+    },
+    {
+      "blob_oid": "ff1b9fb3456434cef060b841034191b828f63780",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/ContractTests.cpp",
+      "sha256": "ce73bcc777d5a94957191b156eec612aa4a729a247eed68c9c651f2639669c7f",
+      "size": 61655
+    },
+    {
+      "blob_oid": "29e7781f14ec51756e481859cdf32a33ced04444",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/DefinitionIdentityTests.cpp",
+      "sha256": "6e9d3c910a73da7014a923730ec7eabbbab8f37d9bcf61edfbf18cb8b421a312",
+      "size": 3685
+    },
+    {
+      "blob_oid": "89907bd8ecac0097e785dabc8dee0c01cad193d3",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/README.md",
+      "sha256": "961996fc0cae981a30cfac94c436301a1a0558bdb886f1bc852c7a001342c615",
+      "size": 8377
+    },
+    {
+      "blob_oid": "ae1ec429d3cd7eba3b1e3c9c0dd161b6c8177053",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/c_calls.c",
+      "sha256": "9d5567018ee9646f20fc67361e2b098ceff9b6ee019e48b27be1f0a94529e440",
+      "size": 1061
+    },
+    {
+      "blob_oid": "c3dfb39a5b190d94863ad75dd6b03e8344b707bc",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/c_control_flow.c",
+      "sha256": "3dfd04c88160fb05996663c48426773747ce405ec9e21c9a9ee21a989741ee40",
+      "size": 2607
+    },
+    {
+      "blob_oid": "27c9085b927bb462117f3ab48fe1131185f611b2",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/c_effective_bytes.c",
+      "sha256": "3182d3dbafcb40a106f75bfdf72c0038b6462cbef10e235332254cbe71b58b7b",
+      "size": 946
+    },
+    {
+      "blob_oid": "6002ff388aebae8eeceb9ef61cbb0e00c949696a",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/c_large_budget.c",
+      "sha256": "72cf40a8aed7f0da3883aeff8063323753d60ff0c30efb60bc81de7dfab64d21",
+      "size": 1838
+    },
+    {
+      "blob_oid": "274f5f275f988a8b3201c4f10184745e25aaff8b",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/c_ssa_memory.c",
+      "sha256": "6d940553dd21b61f419cda7b8a6f8c9478736bee845909744197ef1bb5dc3129",
+      "size": 1880
+    },
+    {
+      "blob_oid": "a35ec54b65deec57bac8ddc5aadbd4c372d91131",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/cpp_virtual.cpp",
+      "sha256": "0d931f6508b23dae3b32053e6259361bd93b740771c950017616fe9bd780dbc3",
+      "size": 1216
+    },
+    {
+      "blob_oid": "5ee4422ddf72b6e787a6a075fa46019b4f6cbe0b",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/objc_dispatch.m",
+      "sha256": "4610dff6e00ffd0a8cde0197a913fd98a6617eef43d3e9023b09f7748550d357",
+      "size": 659
+    },
+    {
+      "blob_oid": "7cf56b829583b3f7f4615d18063b354687cfee75",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/Fixtures/swift_calls.swift",
+      "sha256": "2b0ccfc1ce9cfd9036dc4c12d0d94c34836258e6f8cd58b8d6d4a278cdb6458a",
+      "size": 990
+    },
+    {
+      "blob_oid": "7093d0b67a6622543c006a6b91cd9c1b8d89f252",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/GhidraPacQualificationSupport.cpp",
+      "sha256": "7e5fac35d4b528a150fd120f3b2621445a5de4e9fcfa7f723a994fceed6648fe",
+      "size": 5172
+    },
+    {
+      "blob_oid": "4e04d737cf5d543921d495b5c46d5c42c694b3e9",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/GhidraPacQualificationSupport.hpp",
+      "sha256": "d7766a639308bd01ca56ab14580240adb8ec24ef3efa2c490b00146ac1dfa60f",
+      "size": 634
+    },
+    {
+      "blob_oid": "89fe4830ac032e3ca0c62b7cda7dcb18ed26e731",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/GhidraPackageAttestationFixture.hpp",
+      "sha256": "d5744d93e0d9e17a9eece6918cbfb7b3c85670f9cc676fec6f3a723b32ede0e1",
+      "size": 13201
+    },
+    {
+      "blob_oid": "058d7fcbfe4cb2d2244e8f8d7a92abf17c071225",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/GhidraPackageIdentityTests.cpp",
+      "sha256": "7088287fd39379d546f4a2c518daa3295554887850cbfc4d4e427027710ee4b8",
+      "size": 22074
+    },
+    {
+      "blob_oid": "1d1aa989ecbf79fa07424f69edf2ff9b733463eb",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/GhidraProviderLocationTests.cpp",
+      "sha256": "f42efd5b48cb38eaa6ca87e2f04b9ecd6e0b498d43f9ed2eecf80230a5263e53",
+      "size": 7216
+    },
+    {
+      "blob_oid": "94390b4682fd4c68c02529e4d1a1de9b821cf997",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/GhidraProviderTests.cpp",
+      "sha256": "a54dae86a6c4e73b4fcecc117c3e9e900aef2c5c69710f9e699d1fcdf89d338d",
+      "size": 289547
+    },
+    {
+      "blob_oid": "19a4f345b953f1d376ed52565501e75f37f69ccd",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/PcodeOpcodeVocabularyBindingTests.cpp",
+      "sha256": "65832259d927af065011f492859069d095396f9a50ac5615fbe5394d1e8d08be",
+      "size": 2117
+    },
+    {
+      "blob_oid": "8465dece72be54f2dead2b3fd090e68b1955afc5",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/ProviderBackendTests.cpp",
+      "sha256": "219b8e4a2e50db2b40a7106907f9238491d0b4e2153999043cf6d17aec4e5ec2",
+      "size": 43156
+    },
+    {
+      "blob_oid": "22616f7d0c9234a77cbd9bc4d80376cd46ebf0f3",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/TestFixtures.hpp",
+      "sha256": "3b5c85132461a986a7a740bee56d490d2de8f8d491cf9fefdd2d2cdc6f131cb0",
+      "size": 9459
+    },
+    {
+      "blob_oid": "b3cb090975227ebe135e3211e6d13d919ccf6992",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/WireSizeBoundV3Probe.mm",
+      "sha256": "daf6934dd43d1e9755ddf80270435f02077289043c58b2fcf50ad84baccb88a9",
+      "size": 3469
+    },
+    {
+      "blob_oid": "5f5aba4e4ae5620471d4e4ad131b7f6db69659ac",
+      "mode": "100644",
+      "path": "Tools/NativeDecompilerBridge/tests/WireSizeBoundV3Probe.swift",
+      "sha256": "dc94b0df48f53f4b4280b735d944f756f6c2828f2a2d27655e7dbc18d81fdf3f",
+      "size": 1858
+    }
+  ],
+  "values": {
+    "architecture": "arm64",
+    "configuration": "Release",
+    "deployment-target": "27.0",
+    "native-tools": "d21a43f97bf5f50577e73f015b1dbf220d4bb13020bccc549b1038b421cdd22b",
+    "payload-layout": "native-bridge-contract-archive-path-free-v1",
+    "platform-toolchain": "6ca92696720b91125d1a49f6594eecfc267910d9d35a4972593896c2ed9f5953",
+    "sleigh-native-source": "b9fcd5275b29a33e0fb636e07466aab083f040913514c6b2e7e58516a45b71e6"
+  },
+  "wrapper_revision": "58a0ad426188010995af2694b51fa1dfa9120a1d2ef921773e8ea2da99206b74"
+}

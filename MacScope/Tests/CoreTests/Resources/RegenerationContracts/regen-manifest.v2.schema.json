@@ -1,0 +1,297 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "macscope:regen-manifest:2",
+  "title": "REGEN-MANIFEST.json v2 (v1 differs only where noted)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "app",
+    "generatedBy",
+    "functions",
+    "resources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "enum": [
+        1,
+        2
+      ],
+      "description": "1 = RG1 as first landed; 2 adds state external and dependencyId (RG4)."
+    },
+    "app": {
+      "type": "object",
+      "required": [
+        "name",
+        "bundleIdentifier",
+        "images"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "bundleIdentifier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "imageName",
+              "uuid",
+              "architecture",
+              "sha256"
+            ],
+            "properties": {
+              "imageName": {
+                "type": "string"
+              },
+              "uuid": {
+                "type": "string",
+                "description": "LC_UUID of the analysed slice"
+              },
+              "architecture": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "description": "of the analysed slice bytes"
+              }
+            }
+          }
+        }
+      }
+    },
+    "generatedBy": {
+      "type": "object",
+      "required": [
+        "macScopeSHA",
+        "generatedAt"
+      ],
+      "properties": {
+        "macScopeSHA": {
+          "type": "string"
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "functions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "imageQualifiedAddress",
+          "functionUUID",
+          "name",
+          "language",
+          "stubFile",
+          "stubLine",
+          "state"
+        ],
+        "properties": {
+          "imageQualifiedAddress": {
+            "type": "string",
+            "pattern": "^[^:]+:0x[0-9a-f]+$",
+            "description": "<imageName>:0x<lowercase hex>"
+          },
+          "functionUUID": {
+            "type": "string"
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "language": {
+            "enum": [
+              "objc",
+              "swift",
+              "c"
+            ]
+          },
+          "stubFile": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "null only when state is external"
+          },
+          "stubLine": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "state": {
+            "enum": [
+              "stub",
+              "filled",
+              "compiles",
+              "accepted",
+              "external"
+            ],
+            "description": "v1 has no external. accepted is set only by the Reconstruction pipeline."
+          },
+          "dependencyId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "v2 only; DEPENDENCIES.json id when state is external, else null"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "state": {
+                  "const": "external"
+                }
+              },
+              "required": [
+                "state"
+              ]
+            },
+            "then": {
+              "properties": {
+                "stubFile": {
+                  "type": "null"
+                },
+                "stubLine": {
+                  "type": "null"
+                },
+                "dependencyId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dependencyId"
+              ]
+            },
+            "else": {
+              "properties": {
+                "stubFile": {
+                  "type": "string"
+                },
+                "stubLine": {
+                  "type": "integer"
+                },
+                "dependencyId": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "compiledPath",
+          "sourcePath",
+          "converter",
+          "status",
+          "equivalence"
+        ],
+        "properties": {
+          "compiledPath": {
+            "type": "string"
+          },
+          "sourcePath": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "converter": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "copied",
+              "converted",
+              "partial",
+              "refused"
+            ]
+          },
+          "equivalence": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "required": [
+              "result",
+              "receiptPath"
+            ],
+            "properties": {
+              "result": {
+                "enum": [
+                  "equal",
+                  "different",
+                  "notChecked"
+                ]
+              },
+              "receiptPath": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "description": "null = no equivalence check was attempted (status copied or refused); notChecked = a converter ran but its oracle did not"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          }
+        },
+        "required": [
+          "schemaVersion"
+        ]
+      },
+      "then": {
+        "properties": {
+          "functions": {
+            "items": {
+              "properties": {
+                "state": {
+                  "enum": [
+                    "stub",
+                    "filled",
+                    "compiles",
+                    "accepted"
+                  ]
+                }
+              },
+              "not": {
+                "required": [
+                  "dependencyId"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

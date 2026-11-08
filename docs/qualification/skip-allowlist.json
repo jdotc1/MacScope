@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 2,
+  "countingRule": "direct-and-file-local-transitive-swift-test-methods",
+  "knownGap": "This policy follows lexical same-file helper calls, with only the explicitly recognized InstalledAppUITestHarness.requireOptedInCandidate and HostCompilerFixture.objc cross-file guards. Receiver identity, semantic overload resolution, other cross-file calls, dynamic dispatch and closures passed as values remain unresolved. Retained waivers do not establish installed zero-skip qualification or resolve source drift.",
+  "entries": [
+    {
+      "file": "CoreTests/AnalysisBenchmarkTests.swift",
+      "method": "testBenchmarkRunsAndReportsCoarseTimingsForSystemBinary",
+      "reason": "Benchmarks the host's /bin/ls and cannot run when that system binary is unreadable."
+    },
+    {
+      "file": "CoreTests/AnalysisBenchmarkTests.swift",
+      "method": "testMeasureAnalysisThroughputGated",
+      "reason": "Expensive throughput measurement is explicitly environment-opted-in and also requires readable /bin/ls."
+    },
+    {
+      "file": "CoreTests/BinExport2ExporterTests.swift",
+      "method": "testCompleteCallGraphDecodesWithProtocSchema",
+      "reason": "Independent schema decode requires a locally installed /opt/homebrew/bin/protoc executable; uses the bundled schema or the explicitly supplied MACSCOPE_BINEXPORT2_PROTO official schema. Skips only when protoc is unavailable."
+    },
+    {
+      "file": "CoreTests/BinExport2OperandTreeTests.swift",
+      "method": "testProtocDecode",
+      "reason": "Integration check requires both a locally installed protoc executable and the external binexport2.proto schema."
+    },
+    {
+      "file": "CoreTests/BinExport2OperandTreeTests.swift",
+      "method": "testProtocDecodeNegativeOffsetEmitsNoStrayHash",
+      "reason": "Independent protoc decode requires locally installed /opt/homebrew/bin/protoc and bundled binexport2.proto; skip only when either prerequisite is absent."
+    },
+    {
+      "file": "CoreTests/CLIRunnerTests.swift",
+      "method": "testExecuteBoundsInputOutputAndRejectsLateResults",
+      "reason": "Loads the host's /bin/ls fixture and skips only when that binary is absent."
+    },
+    {
+      "file": "CoreTests/CLIRunnerTests.swift",
+      "method": "testExecuteRejectsDuplicateJSONKeysAndDeniedFilesystemCommands",
+      "reason": "Loads the host's /bin/ls fixture and skips only when that binary is absent."
+    },
+    {
+      "file": "CoreTests/CLIRunnerTests.swift",
+      "method": "testExecuteRunsBatchScriptAgainstRealBinary",
+      "reason": "Exercises the CLI against the host's real /bin/ls Mach-O and skips when that binary is absent."
+    },
+    {
+      "file": "CoreTests/CLIRunnerTests.swift",
+      "method": "testExecuteThrowsOnMalformedScript",
+      "reason": "Malformed-script integration still loads the host's /bin/ls fixture, which may be unavailable."
+    },
+    {
+      "file": "CoreTests/CLIRunnerTests.swift",
+      "method": "testTypedReadScriptRecordsCLIProposalAndAppAuthorization",
+      "reason": "Verifies CLI proposal and app authorization against the host's /bin/ls fixture and skips only when that binary is absent."
+    },
+    {
+      "file": "CoreTests/CalleeContractsLibjpegWitnessTests.swift",
+      "method": "testLibjpegWarmExportWitness",
+      "reason": "One explicitly authorized libjpeg diagnostic; requires MACSCOPE_LIBJPEG_WITNESS=1 and /opt/homebrew/lib/libjpeg.8.dylib."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testRealDWARFLayoutSurvivesDatabaseRoundTrip",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testScriptingReadDebugSymbolsInjectsDemangledNames",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testScriptingReadDebugSymbolsSurfacesUUIDMismatchAsError",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testServiceRecoversNamesFromRealDSYMWhenUUIDMatches",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testServiceRecoversTypesFromRealDSYMWhenUUIDMatches",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testServiceRejectsMismatchedUUID",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testServiceRejectsMissingExpectedUUID",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testStoreInjectsRecoveredNamesAsCustomNameOverrides",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DSYMImportTests.swift",
+      "method": "testStoreReportsMismatchWithoutMutating",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DWARFFunctionSignatureOracleTests.swift",
+      "method": "testReaderConcreteExpectations",
+      "reason": "Builds a clang fixture plus dSYM and differentials against Xcode dwarfdump; skips only when clang, dsymutil or dwarfdump is unavailable or produces no DWARF on this host."
+    },
+    {
+      "file": "CoreTests/DWARFFunctionSignatureOracleTests.swift",
+      "method": "testReaderMatchesOracleAcrossSignatureMatrix",
+      "reason": "Builds a clang fixture plus dSYM and differentials against Xcode dwarfdump; skips only when clang, dsymutil or dwarfdump is unavailable or produces no DWARF on this host."
+    },
+    {
+      "file": "CoreTests/DWARFFunctionSignatureOracleTests.swift",
+      "method": "testReaderResolvesTypesPerCompileUnit",
+      "reason": "Builds a clang fixture plus dSYM and differentials against Xcode dwarfdump; skips only when clang, dsymutil or dwarfdump is unavailable or produces no DWARF on this host."
+    },
+    {
+      "file": "CoreTests/DWARFFunctionSignatureOracleTests.swift",
+      "method": "testReaderUsesDwarfdumpPrototypeEvidenceForEmptyParameterLists",
+      "reason": "Builds a clang fixture plus dSYM and differentials against Xcode dwarfdump; skips only when clang, dsymutil or dwarfdump is unavailable or produces no DWARF on this host."
+    },
+    {
+      "file": "CoreTests/DWARFFunctionSignatureTests.swift",
+      "method": "testReaderMatchesDwarfdumpOracleForRealDSYM",
+      "reason": "Builds a clang fixture plus dSYM and differentials against Xcode dwarfdump; skips only when clang, dsymutil or dwarfdump is unavailable or produces no DWARF on this host, or dwarfdump does not report the target function."
+    },
+    {
+      "file": "CoreTests/DWARFLineProgramTests.swift",
+      "method": "testDSYMImportRecoversSourceLinesReachableThroughLookup",
+      "reason": "Builds a small clang fixture and its dSYM with the selected Xcode clang/dsymutil; skips only when that toolchain is unavailable, dsymutil emits no dSYM, or the fixture lacks LC_UUID."
+    },
+    {
+      "file": "CoreTests/DWARFLineProgramTests.swift",
+      "method": "testLineProgramMatchesDwarfdumpOnRealDSYM",
+      "reason": "Builds a clang fixture plus dSYM and compares the line program with Xcode dwarfdump; skips only when clang, dsymutil or dwarfdump is unavailable or fails on this host."
+    },
+    {
+      "file": "CoreTests/DWARFReaderBreadthTests.swift",
+      "method": "testPackage01FixtureRecoversTypeGraphAndTypedLocals",
+      "reason": "Requires the external handoff_package/sections DWARF fixture; skip only when the fixture debug_info.bin cannot be located by the declared source-root search."
+    },
+    {
+      "file": "CoreTests/DataCrossReferenceParallelTests.swift",
+      "method": "testBelowThresholdFallbackMatchesSequential",
+      "reason": "Parallel/sequential comparison analyzes the host's /bin/ls and skips when that fixture is absent."
+    },
+    {
+      "file": "CoreTests/DataCrossReferenceParallelTests.swift",
+      "method": "testParallelMatchesSequentialWithEmptyClassificationInputs",
+      "reason": "Empty-classification comparison analyzes the host's /bin/ls and skips when that fixture is absent."
+    },
+    {
+      "file": "CoreTests/DebuggerBreakpointSourceEvidenceTests.swift",
+      "method": "testFatDSYMReadsSectionsRelativeToSelectedSliceAndSealsOnlyThatSlice",
+      "reason": "Builds a fat clang fixture and dSYM; skips only when clang/dsymutil are unavailable, dsymutil emits no dSYM, or the fixture has no UUID."
+    },
+    {
+      "file": "CoreTests/DebuggerBreakpointSourceEvidenceTests.swift",
+      "method": "testMatchedDSYMSealsExactSelectedMachOBytes",
+      "reason": "Builds a clang fixture and dSYM; skips only when clang/dsymutil are unavailable, dsymutil emits no dSYM, or the fixture has no UUID."
+    },
+    {
+      "file": "CoreTests/DebuggerLivePCTests.swift",
+      "method": "testAcceptedModuleReloadRemintsLogicalBreakpointBindingIdentity",
+      "reason": "Skips only if the in-test fixture cannot be constructed (reloaded snapshot lacks available runtime-module authority); this is a fixture-construction guard that should not fire on a correct tree, and is a candidate to become XCTFail."
+    },
+    {
+      "file": "CoreTests/DebuggerLivePCTests.swift",
+      "method": "testRunToCursorWithMultipleCurrentLoadInstancesSendsNoRuntimeRequest",
+      "reason": "Skips only if the in-test fixture cannot be constructed (duplicate-load snapshot lacks available runtime-module authority); this is a fixture-construction guard that should not fire on a correct tree, and is a candidate to become XCTFail."
+    },
+    {
+      "file": "CoreTests/DebuggerLogicalBreakpointPersistenceTests.swift",
+      "method": "testPackageLogicalCatalogRejectsDuplicateKeysAtEveryNestedAuthorityLevel",
+      "reason": "Skips only if the in-test fixture cannot be constructed (the encoded catalog lacks the JSON object member being duplicated); this is a fixture-construction guard that should not fire on a correct tree, and is a candidate to become XCTFail."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentCLIProcessChannelTests.swift",
+      "method": "testCommandFreeRetirementLeavesNoStoppedLaunchedInferior",
+      "reason": "Needs the selected Xcode-bundled LLDB and the RX01 fixture, and a host that permits LLDB to launch it; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentCLIProcessChannelTests.swift",
+      "method": "testConcreteChannelBoundsExactTestOwnedLLDBTerminationAndClosesHandles",
+      "reason": "Live process-channel lifecycle proof requires the selected Xcode-bundled LLDB executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentCLIProcessChannelTests.swift",
+      "method": "testConcreteChannelPreservesOrderedMultiChunkExchanges",
+      "reason": "Live multi-chunk debugger exchange requires the selected Xcode-bundled LLDB executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentLLDBLiveLaunchStatusTests.swift",
+      "method": "testLaunchExchangeObservesTheStoppedProcessInTheSameExchange",
+      "reason": "Needs the selected Xcode-bundled LLDB, the RX01 fixture and a host that permits LLDB to launch it; skips when any is unavailable or LLDB exits before answering."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testCoordinatorFailureRetiresAdapterAndAdmitsRelaunch",
+      "reason": "Builds the 4-thread fixture with the selected Xcode clang; needs that clang, the Xcode-bundled LLDB and an available persistent LLDB backend; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testExactAttachDetachRetainsExternalFixtureAndLeavesNoResidue",
+      "reason": "Serialized WS22 external-attach proof runs only when MACSCOPE_DEBUGGER_WS22_ATTACH_LIVE_SMOKE=1 or /tmp/MacScope-WS22-LiveAttachProof.input supplies explicit opt-in. Skip only when neither route is present."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testFailedStoppedMutationRecoveryAdmitsRelaunch",
+      "reason": "Needs the selected Xcode-bundled LLDB, the RX01 fixture and an available persistent LLDB backend; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointCallbackStopsWithTypedRecordAndNoRawStdout",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointExactCleanupLeavesNoOwnedBreakpointsOrProcessResidue",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointFalseConditionContinuesWithoutRunningActions",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointIgnoreFirstSkipsFirstHitThenStops",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointLifecycleRetainsForeignBreakpointAndAdapterWithoutResidue",
+      "reason": "Serialized production LLDB lifecycle proof requires the explicitly supplied pre-verified signed fixture in MACSCOPE_DEBUGGER_LIVE_FIXTURE; skip only when that input is absent or empty."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointLogAndContinueDrainsTypedRecordWithoutRawStdout",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointTargetExpressionDrainsTypedResult",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointTargetExpressionTimeoutTerminatesAndReaps",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testLogicalBreakpointTotalCallbackDeadlineTerminatesAndReaps",
+      "reason": "Opt-in WS-21 D4 live callback proof: requires MACSCOPE_DEBUGGER_WS21_CALLBACK_LIVE_SMOKE=1 and MACSCOPE_DEBUGGER_LIVE_FIXTURE naming the pre-verified signed fixture executable."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testMultiThreadStopSelectsEveryListedThreadThenContinues",
+      "reason": "Builds the 4-thread fixture with the selected Xcode clang; needs that clang, the Xcode-bundled LLDB and an available persistent LLDB backend; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testPauseAfterBreakpointWithoutThreadSelectionKeepsTheSession",
+      "reason": "Builds the 4-thread fixture with the selected Xcode clang; needs that clang, the Xcode-bundled LLDB and an available persistent LLDB backend; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testPauseAfterSelectingANonStoppingThreadAndContinuingKeepsTheSession",
+      "reason": "Builds the 4-thread fixture with the selected Xcode clang; needs that clang, the Xcode-bundled LLDB and an available persistent LLDB backend; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testSavedAutoContinueBreakpointRunsToExitAndAdmitsRelaunch",
+      "reason": "Needs the selected Xcode-bundled LLDB, the RX01 fixture and an available persistent LLDB backend; skips otherwise (via runSavedBreakpointRX01Proof)."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testSavedBreakpointLaunchAtEntryThenContinueStopsAtBreakpoint",
+      "reason": "Needs the selected Xcode-bundled LLDB, the RX01 fixture and an available persistent LLDB backend; skips otherwise (via runSavedBreakpointRX01Proof)."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testSelectEachThreadSequenceKeepsTheStoppedSessionAndFramePC",
+      "reason": "Builds the 4-thread fixture with the selected Xcode clang; needs that clang, the Xcode-bundled LLDB and an available persistent LLDB backend; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerPersistentProductionLiveSmokeTests.swift",
+      "method": "testStepFailureRetiresAdapterLeavesNoOrphansAndAdmitsRelaunch",
+      "reason": "Builds the 4-thread fixture with the selected Xcode clang; needs that clang, the Xcode-bundled LLDB and an available persistent LLDB backend; skips otherwise."
+    },
+    {
+      "file": "CoreTests/DebuggerSourceInspectionModelTests.swift",
+      "method": "testSourceFreshnessRejectsStopMappingWorkspaceAndFocusDrift",
+      "reason": "Skips only if the in-test fixture cannot be constructed (the seeded source context does not resolve); this is a fixture-construction guard that should not fire on a correct tree, and is a candidate to become XCTFail."
+    },
+    {
+      "file": "CoreTests/DebuggerVariablesLiveFixtureTests.swift",
+      "method": "testSourceBuiltFixtureExtractsTypedVariablesAndRejectsStaleStopCoordinate",
+      "reason": "Builds and debugs a source fixture with the selected Xcode 27 clang and LLDB tools."
+    },
+    {
+      "file": "CoreTests/DebuggerVariablesLiveFixtureTests.swift",
+      "method": "testSourceBuiltFixtureTreatsMissingStaticScopeAsEmpty",
+      "reason": "Static-scope live fixture requires the selected Xcode 27 clang and LLDB tools."
+    },
+    {
+      "file": "CoreTests/DecompileOutputShapeTests.swift",
+      "method": "testF10MacIRRangeRegionsAndBackendBinding",
+      "reason": "Dot item 891 SPEC 27: fixture limits are disclosed; skips only when the MacIR or native fixture is unavailable."
+    },
+    {
+      "file": "CoreTests/DecompileOutputShapeTests.swift",
+      "method": "testF10NativeCursorIsStaleOnMacIR",
+      "reason": "Dot item 891 SPEC 27: fixture limits are disclosed; skips only when the MacIR or native fixture is unavailable."
+    },
+    {
+      "file": "CoreTests/DecompilerC2DataflowCensusTests.swift",
+      "method": "testLibjpegDataflowCensus",
+      "reason": "Explicit one-input libjpeg census requires MACSCOPE_LIBJPEG_WITNESS=1 and the locally installed libjpeg input; refuses to overwrite an existing census receipt."
+    },
+    {
+      "file": "CoreTests/DecompilerEncodeOneBlockPhiTypeTests.swift",
+      "method": "testLibjpegEncodeOneBlockRendersQuicklyInSSA",
+      "reason": "DIAG-1260 one-function libjpeg render; skips only when the locally installed libjpeg input is absent or SSA lifting is not enabled for the run."
+    },
+    {
+      "file": "CoreTests/DecompilerStructuringVimGoldenTests.swift",
+      "method": "testFrozenLinuxVimTextGoldens",
+      "reason": "Opt-in CP2 real-input check: needs CP2_ROOT (the extracted CP2 package's vim specimen) and CP2_HANDBACK goldens, and the no-SDK-call-signature-pack profile those Linux goldens were recorded under; skips on the Mac's bundled pack."
+    },
+    {
+      "file": "CoreTests/DecompilerStructuringVimGoldenTests.swift",
+      "method": "testMacProfileVimGoldens",
+      "reason": "Opt-in CP2 real-input check: needs CP2_ROOT (the extracted CP2 package's vim specimen) and the bundled SDK call-signature pack the Mac goldens were recorded with."
+    },
+    {
+      "file": "CoreTests/DecompilerStructuringVimGoldenTests.swift",
+      "method": "testRealVimRecoveryProofsAndLegacySwitches",
+      "reason": "Opt-in CP2 real-input check: needs CP2_ROOT pointing at the extracted CP2 package's vim specimen."
+    },
+    {
+      "file": "CoreTests/DecompilerStructuringVimGoldenTests.swift",
+      "method": "testTwentyVimFunctionsOnThisProfile",
+      "reason": "Opt-in CP2 review dump: needs CP2_ROOT (vim specimen) and CP2_MAC_OUTPUT (where the 20 renderings are written)."
+    },
+    {
+      "file": "CoreTests/DecompilerStructuringVimGoldenTests.swift",
+      "method": "testWidgetControlsAreByteIdentical",
+      "reason": "Opt-in CP2 control: needs CP2_WIDGET pointing at the widget fixture binary."
+    },
+    {
+      "file": "CoreTests/DemanglerCorpusGateTests.swift",
+      "method": "testItaniumDemanglerMatchesCppFilt",
+      "reason": "Compiles the C++ corpus fixture with xcrun and differentials against c++filt; skips only when the fixture cannot be compiled or yields no Itanium-mangled symbols."
+    },
+    {
+      "file": "CoreTests/DemanglerCorpusGateTests.swift",
+      "method": "testSwiftDemanglerMatchesSwiftDemangle",
+      "reason": "Compiles the Swift corpus fixture with xcrun and differentials against swift-demangle; skips only when the fixture cannot be compiled or yields no Swift-mangled symbols."
+    },
+    {
+      "file": "CoreTests/DocumentExportServiceTests.swift",
+      "method": "testLibjpegIndexedSlicesMatchReferenceAndReportSinglePassTiming",
+      "reason": "Named real witness /opt/homebrew/lib/libjpeg.8.dylib; skips only when the binary is absent."
+    },
+    {
+      "file": "CoreTests/DocumentExportServiceTests.swift",
+      "method": "testObjectiveCHeaderExportFromAnalyzedBinary",
+      "reason": "Real-binary header export analyzes /usr/bin/plutil and skips if that host binary is unreadable."
+    },
+    {
+      "file": "CoreTests/DyldSharedCacheLoaderTests.swift",
+      "method": "testLiveCacheSingleImageTextAdmitsNativeFunction",
+      "reason": "Requires the host arm64e shared cache and exactly /usr/lib/system/libsystem_blocks.dylib; skips only when the cache file or named image is absent."
+    },
+    {
+      "file": "CoreTests/DyldSharedCacheRealBinaryTests.swift",
+      "method": "testRealSharedCacheHeaderIsRecognized",
+      "reason": "Oracle test requires a readable arm64e dyld shared cache installed on the current host."
+    },
+    {
+      "file": "CoreTests/ELFLoaderTests.swift",
+      "method": "testParseRelocationsOnRealClangObject",
+      "reason": "Generates an ELF object with host clang and skips when the toolchain cannot emit the requested target."
+    },
+    {
+      "file": "CoreTests/ELFRealBinaryOracleTests.swift",
+      "method": "testLoaderMatchesObjdumpOnRealLinkedELFCorpus",
+      "reason": "Cross-tool oracle requires clang, objdump, ld.lld, and at least one linkable ELF target."
+    },
+    {
+      "file": "CoreTests/FunctionStartCoverageTests.swift",
+      "method": "testHeldOutLoaderDiscriminatesRecoveryFromTheTable",
+      "reason": "Held-out recovery comparison needs readable /bin/ls containing a nonempty LC_FUNCTION_STARTS table."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testEmitMacScopeGoldenWhenRequested",
+      "reason": "Golden emission is explicit opt-in through MACSCOPE_EMIT_GOLDEN or MACSCOPE_EMIT_GOLDEN_DIR and requires readable /bin/ls; absent opt-in or unreadable named host input may skip."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testGhidraReferenceDifferential",
+      "reason": "Optional differential requires readable GoldenFixtures/ls/ghidra.json with /bin/ls; skip only when that external oracle reference or selected binary is absent/unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testObjCCorpusGhidraDifferential",
+      "reason": "Optional differential requires readable GoldenFixtures/objc_corpus/ghidra.json with objc_corpus/objc_corpus; skip only when that external oracle reference or selected binary is absent/unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testObjCCorpusReferenceDifferential",
+      "reason": "Optional differential requires readable GoldenFixtures/objc_corpus/reference.json with objc_corpus/objc_corpus; skip only when that external oracle reference or selected binary is absent/unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testRealBinaryRoundTripsAndSelfMatches",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testReferenceDifferential",
+      "reason": "Optional differential requires readable GoldenFixtures/ls/reference.json with /bin/ls; skip only when that external oracle reference or selected binary is absent/unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testSwiftCorpusGhidraDifferential",
+      "reason": "Optional differential requires readable GoldenFixtures/swift_corpus/ghidra.json with swift_corpus/swift_corpus; skip only when that external oracle reference or selected binary is absent/unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenDifferentialTests.swift",
+      "method": "testSwiftCorpusReferenceDifferential",
+      "reason": "Optional differential requires readable GoldenFixtures/swift_corpus/reference.json with swift_corpus/swift_corpus; skip only when that external oracle reference or selected binary is absent/unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenBasicBlocksReferenceProcedureByAddressNotUUID",
+      "reason": "Analyzes the host /bin/ls; skips only when /bin/ls is unreadable or analysis recovers no basic blocks."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenCollectionsAreSortedDeterministically",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenJSONDoesNotEmbedAbsolutePathOrRawUUID",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenJSONIsByteIdenticalAcrossTwoAnalyses",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenJSONIsStableAcrossRepeatedSerialization",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenModelIsEqualAcrossTwoAnalyses",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenOutputHasExpectedNonEmptyShapeForSystemBinary",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/GoldenOutputTests.swift",
+      "method": "testGoldenPseudocodeIsBoundedAndStable",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/ImageTypeCatalogTests.swift",
+      "method": "testCatalogOverRealObjCFixtureCarriesLayoutUsersAndIMPs",
+      "reason": "Compiles a small real Objective-C/Swift fixture with xcrun clang/swiftc; skips when the toolchain is unavailable or the compile fails."
+    },
+    {
+      "file": "CoreTests/ImageTypeCatalogTests.swift",
+      "method": "testRealCompiledClassFieldOffsetsMatchSizeAlignmentAndObjCIvars",
+      "reason": "Compiles a small Swift dylib with the existing xcrun helper to compare class field offsets with the language layout and the ObjC ivar list; skips when the toolchain is unavailable or the compile fails."
+    },
+    {
+      "file": "CoreTests/ImageTypeCatalogTests.swift",
+      "method": "testRealMixedSwiftObjCFixtureCarriesClassAndConformanceMethods",
+      "reason": "Compiles a small mixed Swift/Objective-C fixture with the existing xcrun helper; skips when the toolchain is unavailable or the compile fails."
+    },
+    {
+      "file": "CoreTests/ImageTypeCatalogTests.swift",
+      "method": "testSwiftStaticStructOffsetsAndUnknownGenericLayout",
+      "reason": "Compiles a small real Objective-C/Swift fixture with xcrun clang/swiftc; skips when the toolchain is unavailable or the compile fails."
+    },
+    {
+      "file": "CoreTests/JumpTableRealBinaryTests.swift",
+      "method": "testRealClangSwitchJumpTableIsRecovered",
+      "reason": "Builds an arm64 switch executable with host clang and checks it with otool; skips only when clang/otool are unavailable, the build fails, or clang emits no br-dispatched jump table."
+    },
+    {
+      "file": "CoreTests/LoaderRobustnessDiagnosticsTests.swift",
+      "method": "testRealSharedCacheExtractedImageIsDiagnosedNotMisread",
+      "reason": "HS-5b: needs the one extracted dyld-cache image kept outside the repo (MACSCOPE_DYLD_CACHE_EXTRACTED_IMAGE, docs/testing/DYLD_CACHE_EXTRACTED_FIXTURE.md); explicit opt-in."
+    },
+    {
+      "file": "CoreTests/LumenTruncationConformanceTests.swift",
+      "method": "testTheREAWorkbenchAtItsMinimumSize",
+      "reason": "Compiles a small real Objective-C/Swift fixture with xcrun clang/swiftc; skips when the toolchain is unavailable or the compile fails."
+    },
+    {
+      "file": "CoreTests/M1MaxPerformanceQualificationTests.swift",
+      "method": "testRecordControlledCorpus",
+      "reason": "Explicit Apple silicon performance experiment (PERF-A); skips unless MACSCOPE_PERF_RUN=1 is set, so routine CoreTests never spend benchmark time on it."
+    },
+    {
+      "file": "CoreTests/MCPFatalSignalReporterTests.swift",
+      "method": "testS5DefaultOnlyInstallProtectedSignalsAndRestore",
+      "reason": "Skips only when the test host already owns a SIGUSR2 handler, so the install/restore check never overwrites a host-owned handler."
+    },
+    {
+      "file": "CoreTests/MCPLauncherTests.swift",
+      "method": "testMakeStoreLoadsRealSystemBinaryAndServesMCP",
+      "reason": "End-to-end MCP store fixture uses the host's real /bin/ls Mach-O."
+    },
+    {
+      "file": "CoreTests/MacIRCFGTests.swift",
+      "method": "testLibjpegExplicitGraphAcceptanceAndExport",
+      "reason": "Explicit libjpeg graph acceptance/export requires MACSCOPE_LIBJPEG_WITNESS=1, MACSCOPE_CFG_OUT and the local witness input; existing artifacts are never overwritten."
+    },
+    {
+      "file": "CoreTests/MacIRSSAWitnessTests.swift",
+      "method": "testReportCapturedUpsamplerLoopHeaderProducers",
+      "reason": "Opt-in captured-loop producer report requires the SSA lifter and MACSCOPE_SSA_REPORT_CAPTURED_LOOP=1 before converting the captured return expectation."
+    },
+    {
+      "file": "CoreTests/MachOAdHocSignerTests.swift",
+      "method": "testPatchedAndCaveAppendedWitnessesAreAdHocSignedAndRun",
+      "reason": "Transitively calls same-file helper signedWitness, whose XCTSkip guard requires xcrun clang/codesign to build and sign the real witness executable."
+    },
+    {
+      "file": "CoreTests/MachOAdHocSignerTests.swift",
+      "method": "testRestrictedEntitlementsAreReportedAndUnsignedInputsRefused",
+      "reason": "Transitively calls same-file helper signedWitness, whose XCTSkip guard requires xcrun clang/codesign to build and sign the real witness executable."
+    },
+    {
+      "file": "CoreTests/MachOImportTests.swift",
+      "method": "testHexByteReaderIsSectionAccurateOnARealBinary",
+      "reason": "Section-accuracy check needs /bin/ls and at least one decoded instruction from that host binary."
+    },
+    {
+      "file": "CoreTests/MachOImportTests.swift",
+      "method": "testParserRecoversImportsFromSystemMachOFixture",
+      "reason": "Import parser differential is anchored to a readable host /bin/ls Mach-O."
+    },
+    {
+      "file": "CoreTests/MachOImportTests.swift",
+      "method": "testReanalysisPreservesBinaryProvenanceBookmark",
+      "reason": "Reanalysis proof needs /bin/ls to expose at least one call cross-reference."
+    },
+    {
+      "file": "CoreTests/MachOImportTests.swift",
+      "method": "testStoreMarkAsProcedureForcesAndUndoesAFunctionStart",
+      "reason": "Procedure override proof needs /bin/ls to expose an instruction that is not already a function start."
+    },
+    {
+      "file": "CoreTests/MachOImportTests.swift",
+      "method": "testStorePatchAndClearReDecodesAndUndoes",
+      "reason": "Patch round trip needs /bin/ls to expose at least one non-nop instruction."
+    },
+    {
+      "file": "CoreTests/MachOImportTests.swift",
+      "method": "testStoreReanalyzesOnMarkAsDataAndUndo",
+      "reason": "Data-mark reanalysis needs /bin/ls to expose at least one call cross-reference."
+    },
+    {
+      "file": "CoreTests/MachOImportTests.swift",
+      "method": "testStoreReanalyzesOnMarkAsUndefinedAndUndo",
+      "reason": "Undefined-mark reanalysis needs /bin/ls to expose at least one call cross-reference."
+    },
+    {
+      "file": "CoreTests/MachOPatchWriterTests.swift",
+      "method": "testRealThinBinaryPatchLandsAtSegmentDerivedFileOffset",
+      "reason": "Real-binary patch proof requires lipo to extract a usable thin Mach-O slice."
+    },
+    {
+      "file": "CoreTests/NativeDecompilerBundleRuntimeAuthorityProviderTests.swift",
+      "method": "testInstalledQualifiedReleaseAttestsExactRuntimeAuthority",
+      "reason": "Installed runtime-authority attestation runs only with MACSCOPE_F1A_RUN_INSTALLED_AUTHORITY_TEST=1 or existing /private/tmp/macoscope-f1a-run-installed-authority-test sentinel; otherwise skip."
+    },
+    {
+      "file": "CoreTests/NativeDecompilerLiveXPCTests.swift",
+      "method": "testSignedProviderPreservesAuthoredSnapshotCalleeAndReadonlyDataContext",
+      "reason": "Signing-aware authored snapshot/callee/readonly-data context proof is reserved for the live signed-XPC qualification invocation."
+    },
+    {
+      "file": "CoreTests/NativeDecompilerLiveXPCTests.swift",
+      "method": "testSignedProviderTokenAndSourceScalarsProjectForCompleteAndTruncatedDocuments",
+      "reason": "Signing-aware provider-token selector is reserved for the live signed-XPC qualification invocation."
+    },
+    {
+      "file": "CoreTests/NativeDecompilerLiveXPCTests.swift",
+      "method": "testSignedServiceHonorsSupervisionAndRelaunchContract",
+      "reason": "Service supervision proof requires the dedicated live signed-XPC selector and installed runtime conditions."
+    },
+    {
+      "file": "CoreTests/NativeDecompilerLiveXPCTests.swift",
+      "method": "testSignedServiceReturnsMalformedFailureAndHonorsCooperativeCancellation",
+      "reason": "Exact malformed-reply and cooperative-cancellation proof requires the dedicated live signed-XPC qualification invocation."
+    },
+    {
+      "file": "CoreTests/NativeDecompilerSnapshotBuilderTests.swift",
+      "method": "testProjectsRealVimArm64eSliceWhoseLinkeditRelationDiffers",
+      "reason": "Host-image projection needs readable /usr/bin/vim, selected arm64e slice and a bounded function span beginning at 0x100000af8 with a greater function-start boundary; skip only when that exact host specimen shape is absent."
+    },
+    {
+      "file": "CoreTests/NeutralRelocationTests.swift",
+      "method": "testElfRelocationsSurfacedOnLoadedBinary",
+      "reason": "Relocation test skips if the host compiler cannot produce the requested ELF object fixture."
+    },
+    {
+      "file": "CoreTests/NeutralRelocationTests.swift",
+      "method": "testMachORelocationsSurfacedOnLoadedBinary",
+      "reason": "Compiles a relocatable object with host clang; skips only when clang is unavailable, fails to launch or produces no object."
+    },
+    {
+      "file": "CoreTests/NeutralRelocationTests.swift",
+      "method": "testRelocationsReachSnapshotAndScriptingCommand",
+      "reason": "Compiles a relocatable object with host clang; skips only when clang is unavailable, fails to launch or produces no object."
+    },
+    {
+      "file": "CoreTests/ObjCCategoryTests.swift",
+      "method": "testRecoversCategoryOnExternalClass",
+      "reason": "Builds an Objective-C category fixture with xcrun clang; skips only when xcrun is unavailable or the build fails."
+    },
+    {
+      "file": "CoreTests/ObjCClassParserTests.swift",
+      "method": "testRecoversClassesFromRealBinaryPlutil",
+      "reason": "Class metadata oracle analyzes /usr/bin/plutil only when that system binary exists."
+    },
+    {
+      "file": "CoreTests/ObjCClassParserTests.swift",
+      "method": "testRecoversProtocolsFromRealBinary",
+      "reason": "Protocol metadata oracle depends on a specific real system binary being present on the host."
+    },
+    {
+      "file": "CoreTests/ObjCMethodDiscoveryTests.swift",
+      "method": "testUncalledObjCMethodIsDiscoveredFromItsImp",
+      "reason": "Builds an Objective-C fixture with xcrun clang; skips only when xcrun is unavailable or the build fails."
+    },
+    {
+      "file": "CoreTests/PERealBinaryOracleTests.swift",
+      "method": "testLoaderRecoversExportsFromRealDLL",
+      "reason": "Builds a real PE DLL with clang and lld-link; skips only when clang or lld-link is unavailable or the toolchain cannot build or launch the PE build."
+    },
+    {
+      "file": "CoreTests/PERealBinaryOracleTests.swift",
+      "method": "testLoaderRecoversImportsFromRealEXE",
+      "reason": "Builds a real PE EXE with clang and lld-link; skips only when clang or lld-link is unavailable or the toolchain cannot build or launch the PE build."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testAgreeingImagesProduceNoCrossCheckRows",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testAppSideEngineHasNoCrossCheck",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testCorkamiPESpecimensParseInBothPEEngines",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testCorkamiTinyIsABoundaryTheEnginesDisagreeOn",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testDyldSharedCacheImagesAreNeverCrossChecked",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testEachFatSliceIsCheckedWithItsOwnBytes",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testInjectedEnginesFlowIntoDiagnostics",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testLongPESectionNameDisagreementIsSurfaced",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testMachOEnginesAgreeOnSynthesizedSpecimens",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testMalformedInputIsRejectedNotCrashed",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testOversizedSliceIsSkippedWithOneSizeDiagnostic",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testRejectionSizeAndExtraSectionAreAggregatedPerAddress",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testSliceAtTheCapIsStillChecked",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testVerdictIsCachedPerSliceDigestAcrossReanalysisAndEngines",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/ParserCrossCheckTests.swift",
+      "method": "testZeroSizedImportDirectoryIsAnEngineBoundary",
+      "reason": "Skips only when a parser-oracle fixture (vendored Corkami/synthesized specimen) is absent from the source tree; CI checkouts carry them, so the skip is an explicit uncovered-scope record, not a routine path (RX-03)."
+    },
+    {
+      "file": "CoreTests/Phase2LiveAIAgentXPCProductionGateTests.swift",
+      "method": "testOptInMTPLXCSampleRepairLoopOnUnsealedHostPhysicallyReopens",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_CSAMPLE_REPAIR_LIVE=1, a running MTPLX Quality FP16 runtime on 127.0.0.1:8000 and the signed XPC AI worker. Live F1 C-sample repair canary on the dev-loop host; one spend-approved run, default skip is not acceptance."
+    },
+    {
+      "file": "CoreTests/Phase2LiveAIAgentXPCProductionGateTests.swift",
+      "method": "testOptInMTPLXControlledModelAuthoredMismatchRepairPhysicallyReopens",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_SOURCE_REPAIR_CANARY=1, actual MTPLX inference and signed Release source-repair fixture. Delivery must execute physical reopen; default CI skip is not acceptance."
+    },
+    {
+      "file": "CoreTests/Phase2LiveAIAgentXPCProductionGateTests.swift",
+      "method": "testOptInMTPLXImportedCoordinatorRefreshFinalPhysicallyReopens",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_LIVE_CANARY=1 opt-in, exact running MTPLX Quality runtime and signed XPC worker. Exercises an imported job through the real coordinator, model-selected refresh and final synthesis, then physically reopens its retained workspace database."
+    },
+    {
+      "file": "CoreTests/Phase2LiveAIAgentXPCProductionGateTests.swift",
+      "method": "testOptInMTPLXModelSelectedRefreshCommitsFreshAnalysisBeforeNextInference",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_LIVE_CANARY=1 opt-in, exact running MTPLX Quality FP16 runtime and signed R2 XPC worker. Executes two actual-model rounds against an authored Mach-O and verifies selected refresh commits fresh accepted evidence before the next inference."
+    },
+    {
+      "file": "CoreTests/Phase2LiveAIAgentXPCProductionGateTests.swift",
+      "method": "testOptInMTPLXSignedR2WorkerCompletesKnownEvidenceRoundAndSynthesis",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_LIVE_CANARY=1 opt-in, exact running MTPLX Quality FP16 runtime and signed R2 XPC worker. Executes actual-model round and final synthesis; fixture-only protocol checks are separate."
+    },
+    {
+      "file": "CoreTests/Phase2LiveAIAgentXPCProductionGateTests.swift",
+      "method": "testOptInOrdinaryNativeAdmissionForCapturedInput",
+      "reason": "Requires explicit MACSCOPE_RUN_ORDINARY_NATIVE_ADMISSION=1, captured input path and ordinary signed native XPC host. Executed separately during installed acceptance; default CI skip is not runtime proof."
+    },
+    {
+      "file": "CoreTests/PluginCodeSignatureTrustTests.swift",
+      "method": "testRealVerifierAgainstKnownSignedSystemBinary",
+      "reason": "Live verifier needs a known signed system executable and an available Security-framework verification path."
+    },
+    {
+      "file": "CoreTests/PreRefactorByteIdentityTests.swift",
+      "method": "testSingleImageGoldenJSONByteIdentity",
+      "reason": "Requires readable /bin/ls and a readable retained pre-refactor golden anchor; an absent/unreadable anchor may skip when explicit capture was not requested."
+    },
+    {
+      "file": "CoreTests/RX01InstalledFixtureGeneratorTests.swift",
+      "method": "testOptInGeneratesRX01TwoVersionsPackageThroughProductionPersistence",
+      "reason": "RX-01 installed-acceptance fixture generation writes a production workspace package (MACSCOPE_RX01_FIXTURE_OUTPUT_ROOT) and is deliberately explicit opt-in."
+    },
+    {
+      "file": "CoreTests/RealBinaryInvariantTests.swift",
+      "method": "testExportAddressesMatchNm",
+      "reason": "Differentials export addresses of the host binary corpus against nm; skips only when nm is unavailable."
+    },
+    {
+      "file": "CoreTests/ReconstructionDetachedAnalysisSnapshotBuilderTests.swift",
+      "method": "testSignedXPCUsesTransferredPinnedDescriptorWhenAttachmentPathIsReplaced",
+      "reason": "Requires MACSCOPE_RUN_PINNED_XPC_PATH_SWAP=1 in signed app-hosted acceptance to exercise actual transferred descriptor after attachment path replacement. Default CI skip does not prove this opt-in scenario."
+    },
+    {
+      "file": "CoreTests/ReconstructionReplayTests.swift",
+      "method": "testExplicitHeadlessHostSuppressesQuitOnlyDuringActivity",
+      "reason": "T27 headless-host Quit suppression is only observable in a host launched with MACSCOPE_HEADLESS_HOST=1 (resume matrix / canary); ordinary CoreTests hosts stay .regular for window tests."
+    },
+    {
+      "file": "CoreTests/RegenerationMachOStructureFixtureTests.swift",
+      "method": "testCompileOnlyObjectiveCFixturePair",
+      "reason": "Opt-in fixture check: requires MACSCOPE_REGEN_FIXTURE_ROOT naming the retained compile-only Objective-C fixture pair."
+    },
+    {
+      "file": "CoreTests/RehydrationStoreTests.swift",
+      "method": "testDatabaseRoundTripRehydrationMatchesFreshAnalysis",
+      "reason": "Database rehydration comparison analyzes the host's readable /bin/ls fixture."
+    },
+    {
+      "file": "CoreTests/RehydrationStoreTests.swift",
+      "method": "testPackageRoundTripRehydrationMatchesFreshAnalysis",
+      "reason": "Package rehydration comparison analyzes the host's readable /bin/ls fixture."
+    },
+    {
+      "file": "CoreTests/RehydrationTests.swift",
+      "method": "testRehydrateReproducesFreshByteDerivedProductsAndPreservesTheRest",
+      "reason": "Fresh-versus-rehydrated product comparison requires readable host /bin/ls bytes."
+    },
+    {
+      "file": "CoreTests/RehydrationTests.swift",
+      "method": "testRehydrateThroughProviderSeam",
+      "reason": "Provider-seam rehydration comparison requires readable host /bin/ls bytes."
+    },
+    {
+      "file": "CoreTests/ReturnContractGuardedZeroTests.swift",
+      "method": "testAbsentAndFalsePreferenceKeepCompleteProducerFactsEqual",
+      "reason": "Preference fallback is inactive when the hosted runner installs its immutable mode baseline; skips before touching UserDefaults in that mode."
+    },
+    {
+      "file": "CoreTests/RoadmapP0RegressionTests.swift",
+      "method": "testChainedFixupSelectorReferencesResolveInArm64AndArm64eExecutables",
+      "reason": "Requires host xcrun and successful native fixture compilation; unavailable host tooling may skip, analysis assertions remain mandatory."
+    },
+    {
+      "file": "CoreTests/RoadmapP0RegressionTests.swift",
+      "method": "testDylibWithTextAtZeroRecoversObjCClassesAndSelectors",
+      "reason": "Requires host xcrun and successful native fixture compilation; unavailable host tooling may skip, analysis assertions remain mandatory."
+    },
+    {
+      "file": "CoreTests/RoadmapP0RegressionTests.swift",
+      "method": "testExportTrieAddressesAreImageBaseRelative",
+      "reason": "Requires host xcrun and successful native fixture compilation; unavailable host tooling may skip, analysis assertions remain mandatory."
+    },
+    {
+      "file": "CoreTests/RoadmapP0RegressionTests.swift",
+      "method": "testObjCStubsAreNamedAndPseudocodeNamesCallTargetsInStrippedBinary",
+      "reason": "Builds and strips an Objective-C fixture with xcrun tools; skips only when xcrun is unavailable or a tool step fails on this host."
+    },
+    {
+      "file": "CoreTests/ScriptingAPITests.swift",
+      "method": "testCallArgumentAuditDescriptorDigestIsChunkedAndRejectsSizeDrift",
+      "reason": "Descriptor-digest proof needs the host to open a temporary file descriptor successfully."
+    },
+    {
+      "file": "CoreTests/ScriptingAPITests.swift",
+      "method": "testCallArgumentAuditNoCallEnvelopeUsesWholeFilesAndActiveToolchain",
+      "reason": "Skips only if the in-test fixture cannot be constructed (_NSGetExecutablePath cannot report the running test executable); this is a fixture-construction guard that should not fire on a correct tree, and is a candidate to become XCTFail."
+    },
+    {
+      "file": "CoreTests/SourceFunctionCorrelationTests.swift",
+      "method": "testRealSpecimenPositiveNegativesAndFreshSaveReopen",
+      "reason": "Explicit local source correlation pilot requires MACSCOPE_SOURCE_CORRELATION_SPECIMEN_ROOT naming the retained pinned-source reference, stripped target and dSYM. No acquisition or specimen compilation occurs in tests; the authorized local run supplies this root and requires zero skips."
+    },
+    {
+      "file": "CoreTests/StubCallSymbolicationTests.swift",
+      "method": "testSymbolicatesImportStubInRealBinary",
+      "reason": "Builds a small fixture with xcrun clang; skips only when xcrun is unavailable or clang produces no binary."
+    },
+    {
+      "file": "CoreTests/SwiftAsyncContinuationProverTests+Corpus.swift",
+      "method": "testLinkedFixtureContinuationRelations",
+      "reason": "Opt-in corpus check: requires MACSCOPE_ASYNC_PROOF_ROOT naming the retained async-continuation oracle and output directory."
+    },
+    {
+      "file": "CoreTests/SwiftAsyncContinuationProverTests+Corpus.swift",
+      "method": "testSampledContinuationBoundaries",
+      "reason": "Opt-in corpus check: requires MACSCOPE_ASYNC_PROOF_ROOT naming the retained async-continuation oracle and output directory."
+    },
+    {
+      "file": "CoreTests/SwiftConformanceTests.swift",
+      "method": "testConformancesMatchSwiftDemangleGroundTruth",
+      "reason": "Compiles a Swift conformance fixture with xcrun swiftc; skips only when xcrun is unavailable or the compile fails on this host, or when the built fixture yields no ...Mc conformance symbols to differential."
+    },
+    {
+      "file": "CoreTests/SwiftConformanceTests.swift",
+      "method": "testRecoversExternalProtocolConformances",
+      "reason": "Compiles a Swift conformance fixture with xcrun swiftc; skips only when xcrun is unavailable or the compile fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftConformanceTests.swift",
+      "method": "testRecoversInModuleConformances",
+      "reason": "Compiles a Swift conformance fixture with xcrun swiftc; skips only when xcrun is unavailable or the compile fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCensusTests.swift",
+      "method": "testMetadataCensus",
+      "reason": "Explicitly opted-in metadata census requires MACSCOPE_SWIFT_CENSUS_DIR containing inputs.txt and the authorized local binaries."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testCompoundSymbolicRefsMatchSwiftcSourceTruth",
+      "reason": "Compiles a small Swift dylib fixture with xcrun swiftc and inspects it with host tools; skips only when xcrun is unavailable or the compile or tool run fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testDemangleTypeMatchesExternalOracleHardFloor",
+      "reason": "Uses xcrun swift-demangle as the external oracle; skips only when xcrun is unavailable or swift-demangle fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testDemangleTypeReturnsNilForOracleInvalidInputs",
+      "reason": "Uses xcrun swift-demangle as the external oracle; skips only when xcrun is unavailable or swift-demangle fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testExistentialCompoundSymbolicRefsStayHonestNil",
+      "reason": "Compiles a small Swift dylib fixture with xcrun swiftc and inspects it with host tools; skips only when xcrun is unavailable or the compile or tool run fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testFieldTypesRoutePureStdlibButKeepObjCImportedRaw",
+      "reason": "Compiles a small Swift dylib fixture with xcrun swiftc and inspects it with host tools; skips only when xcrun is unavailable or the compile or tool run fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testPureSwiftStdlibNameStripsOnlySwiftModuleQualifiers",
+      "reason": "Uses xcrun swift-demangle as the external oracle; skips only when xcrun is unavailable or swift-demangle fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testResolvedFieldTypesNeverContradictSourceTruthCorpus",
+      "reason": "Compiles a small Swift dylib fixture with xcrun swiftc and inspects it with host tools; skips only when xcrun is unavailable or the compile or tool run fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataCrossSeamTests.swift",
+      "method": "testSplicedNominalTextMatchesExternalDemangleOracleBeforeModuleStrip",
+      "reason": "Uses xcrun swift-demangle as the external oracle; skips only when xcrun is unavailable or swift-demangle fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataFunctionExtractorTests.swift",
+      "method": "testCompiledFixtureMateriallyRaisesHeldOutCoverage",
+      "reason": "Compiles the Swift metadata fixture with xcrun swiftc; skips only when swiftc is unavailable, the compile fails, or the built binary is unreadable."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataFunctionExtractorTests.swift",
+      "method": "testCompiledFixtureRecoversEachFunctionBearingMetadataForm",
+      "reason": "Compiles the Swift metadata fixture with xcrun swiftc; skips only when swiftc is unavailable, the compile fails, or the built binary is unreadable."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataGenericRequirementsTests.swift",
+      "method": "testFixtureCorpusDifferential",
+      "reason": "Independent fixture corpus differential requires CP21_FIXTURE_FILES and CP21_OBSERVATIONS_PATH; it skips when either is absent."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataParserTests.swift",
+      "method": "testAdversarialEdgeCasesFromRealSwiftBinary",
+      "reason": "Compiles a small Swift dylib fixture with xcrun swiftc and inspects it with host tools; skips only when xcrun is unavailable or the compile or tool run fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataParserTests.swift",
+      "method": "testRealBinaryFactsMatchSourceDeclarations",
+      "reason": "Compiles a small Swift dylib fixture with xcrun swiftc and inspects it with host tools; skips only when xcrun is unavailable or the compile or tool run fails on this host."
+    },
+    {
+      "file": "CoreTests/SwiftMetadataParserTests.swift",
+      "method": "testRecoversTypesFromRealSwiftBinary",
+      "reason": "Compiles a small Swift dylib fixture with xcrun swiftc and inspects it with host tools; skips only when xcrun is unavailable or the compile or tool run fails on this host."
+    },
+    {
+      "file": "CoreTests/Task10InstalledWorkspaceFixtureGeneratorTests.swift",
+      "method": "testOptInGeneratesInstalledScenarioCatalogThroughProductionPersistence",
+      "reason": "Installed Task 10 scenario-catalog generation writes governed production workspace packages and is deliberately explicit opt-in."
+    },
+    {
+      "file": "CoreTests/Task10InstalledWorkspaceFixtureGeneratorTests.swift",
+      "method": "testOptInGeneratesInstalledWorkspaceFixtureThroughProductionPersistence",
+      "reason": "Fixture generation writes a production workspace package and is deliberately explicit opt-in."
+    },
+    {
+      "file": "CoreTests/TypeAtlasNavigatorTests.swift",
+      "method": "testARealObjCClassIsListedAndInspectable",
+      "reason": "Compiles a small real Objective-C/Swift fixture with xcrun clang/swiftc; skips when the toolchain is unavailable or the compile fails."
+    },
+    {
+      "file": "CoreTests/TypeAtlasUsersTests.swift",
+      "method": "testARealClassUserIsListedInsideMain",
+      "reason": "Compiles a small real Objective-C/Swift fixture with xcrun clang/swiftc; skips when the toolchain is unavailable or the compile fails."
+    },
+    {
+      "file": "CoreTests/WS24InstalledAppQualificationTests.swift",
+      "method": "testOptInLiveInstalledAppDirectTransportRunnerAgainstApplicationsBundle",
+      "reason": "Opt-in live installed-app direct-transport proof: requires MACSCOPE_WS24_RUN_INSTALLED_DIRECT_TRANSPORT=1 or the opt-in flag file, plus the installed /Applications MacScope executable and its sealed provenance with a 40-character git_head_commit."
+    },
+    {
+      "file": "CoreTests/WS24InstalledAppQualificationTests.swift",
+      "method": "testOptInLiveInstalledAppStressRunnerAgainstApplicationsBundle",
+      "reason": "Opt-in live installed-app stress proof: requires MACSCOPE_WS24_RUN_INSTALLED_STRESS=1 or the opt-in flag file, plus the installed /Applications MacScope executable and its sealed provenance with a 40-character git_head_commit."
+    },
+    {
+      "file": "CoreTests/WorkerRehydrateTests.swift",
+      "method": "testMachORehydrateInWorkerMatchesInProcessRestore",
+      "reason": "Uses the host /bin/ls as a real Mach-O specimen and skips only if it is unreadable (sandboxed or non-macOS host) (MS-18)."
+    },
+    {
+      "file": "CoreTests/WorkerRehydrateTests.swift",
+      "method": "testReplyOmitsPreservedProductsAndTheClientRestoresThem",
+      "reason": "Uses the host /bin/ls as a real Mach-O specimen and skips only if it is unreadable (sandboxed or non-macOS host) (C1)."
+    },
+    {
+      "file": "CoreTests/WorkspaceDocumentSessionTests.swift",
+      "method": "testUntitledSaveAsRightAfterRealVimImportPublishesAndReopens",
+      "reason": "Real-path P1 save regression check: imports /usr/bin/vim (minutes in Debug), so it is opt-in via MACSCOPE_REAL_IMPORT_SAVE=1 and also needs a readable /usr/bin/vim."
+    },
+    {
+      "file": "CoreTests/WorkspaceWorkflowSmokeTests.swift",
+      "method": "testAuthoringAndNavigationWorkflowOnRealBinary",
+      "reason": "Uses the host /bin/ls Mach-O; skip only when /bin/ls is unreadable."
+    },
+    {
+      "file": "CoreTests/X86EVEXDesyncSweepTests.swift",
+      "method": "testDecoderStaysSyncedThroughUnrenderedEVEXForms",
+      "reason": "EVEX differential requires clang and otool plus successful host generation of an AVX-512 object."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testInstalledSharedPreferenceDomainRoundTrip",
+      "reason": "Optional exact-domain preference diagnostic requires InstalledAppUITestHarness.requireOptedInCandidate and a host-seeded UUID MACSCOPE_WS24_PREFERENCES_PROBE_NONCE; it is not one of the required Task 10 acceptance selectors."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testOptInInstalledAppAttachSheetReachabilityAndDiagnostics",
+      "reason": "Destructive installed-app XCUITest requires explicit InstalledAppUITestHarness opt-in through its environment key or existing sentinel; only absence of that opt-in may skip."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testOptInInstalledAppLaunchesAndExposesDebuggerDeck",
+      "reason": "Destructive installed-app XCUITest requires explicit InstalledAppUITestHarness opt-in through its environment key or existing sentinel; only absence of that opt-in may skip."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testOptInInstalledAppOpensPersistedWorkspaceAndReachesReconstruction",
+      "reason": "Destructive installed-app XCUITest requires explicit InstalledAppUITestHarness opt-in through its environment key or existing sentinel; only absence of that opt-in may skip."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testOptInInstalledAppRequiresExplicitELFArchiveMemberSelection",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; installed archive selection drives the exact signed /Applications candidate and therefore requires explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CCancelFromActive",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CCorpusCountsAccessible",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CCreateCommitsBeforeAutoStart",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CCreateRejectsEmptySelection",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CCreateRejectsWhitespaceObjective",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CCurrentGapAccessible",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CDestinationSwitchRestoresEditorAuthority",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CDestinationVisibleWhenEndpointMissing",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CDestinationVisibleWhenReady",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CKeyboardAndMenuEquivalence",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CPauseFromActive",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CPausedModelUnavailableIsResumable",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CPendingPauseNotCommitted",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CPrivacyNoRawPathPromptPseudocode",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CResumeExactTarget",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CRevealSourceCurrentAuthority",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CRevealSourceStaleAuthorityNoMutation",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CSaveReopenProjectsBeforeResume",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CStaleCheckpointDisablesCommands",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CTaskEvidenceCountsAccessible",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CTerminalControlsDisabled",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WS24InstalledAppUITests.swift",
+      "method": "testTask10CTwoWindowsKeepIndependentSelection",
+      "reason": "Transitively calls InstalledAppUITestHarness.requireOptedInCandidate; the destructive installed-app matrix requires the exact signed /Applications candidate, its authorized XCUITest runner, and explicit operator opt-in."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WorkspaceAdaptivePaneInstalledAppUITests.swift",
+      "method": "testAdaptivePanesRemainInsideWideAndMinimumWindows",
+      "reason": "Calls InstalledAppUITestHarness.requireOptedInCandidate; requires explicit opt-in and an exact signed installed candidate. Installed qualification still requires zero skips."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WorkspaceAdaptivePaneInstalledAppUITests.swift",
+      "method": "testNativeDividersMoveClampAndPreserveKeyboardFocus",
+      "reason": "Calls InstalledAppUITestHarness.requireOptedInCandidate; requires explicit opt-in and an exact signed installed candidate. Installed qualification still requires zero skips."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WorkspaceAdaptivePaneInstalledAppUITests.swift",
+      "method": "testPaneWidthsRestoreAndRemainIndependentAcrossWindows",
+      "reason": "Calls InstalledAppUITestHarness.requireOptedInCandidate; requires explicit opt-in and an exact signed installed candidate. Installed qualification still requires zero skips."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WorkspaceEditorCommandInstalledAppUITests.swift",
+      "method": "testForegroundEditorMenuAndKeyboardParity",
+      "reason": "Calls InstalledAppUITestHarness.requireOptedInCandidate; requires explicit opt-in and an exact signed installed candidate. Foreground or command-delivery failures remain failures, and installed qualification still requires zero skips."
+    },
+    {
+      "file": "MacScopeInstalledAppUITests/WorkspacePaletteFocusInstalledAppUITests.swift",
+      "method": "testForegroundPaletteAddressAndEditorHandoffsAcceptTyping",
+      "reason": "Calls InstalledAppUITestHarness.requireOptedInCandidate; requires explicit opt-in and an exact signed installed candidate. Foreground, focus, typing, and handoff failures remain failures, and installed qualification still requires zero skips."
+    },
+    {
+      "file": "Phase2Tests/AIAgentXPCInferenceProviderTests.swift",
+      "method": "testOptInMTPLXSignedWorkerCancellationDrainsBeforeIsolatedReplacement",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_LIVE_CANARY=1 opt-in, exact MTPLX Quality FP16 live runtime, and development-signed XPC worker; observes real request cancellation and isolated replacement. MTPLX delivery executes it with zero skips."
+    },
+    {
+      "file": "Phase2Tests/AIAgentXPCInferenceProviderTests.swift",
+      "method": "testOptInMTPLXSignedWorkerGroundedCanaryAndLongerEvidence",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_LIVE_CANARY=1 opt-in, the exact running MTPLX Quality FP16 model, and the development-signed XPC worker. The MTPLX delivery runs this check explicitly with zero skips."
+    },
+    {
+      "file": "Phase2Tests/AIAgentXPCInferenceProviderTests.swift",
+      "method": "testOptInMTPLXSignedWorkerInsufficientEvidenceAbstains",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_LIVE_CANARY=1 opt-in, exact running MTPLX Quality FP16 and signed worker. Live delivery must execute the absent-evidence abstention rather than count the opt-in skip as success."
+    },
+    {
+      "file": "Phase2Tests/AIAgentXPCInferenceProviderTests.swift",
+      "method": "testOptInMTPLXSignedWorkerRealBinaryKnownAnswer",
+      "reason": "Requires explicit MACSCOPE_RUN_MTPLX_LIVE_CANARY=1 opt-in, exact running MTPLX Quality FP16 and signed worker; compiles and executes an ARM64 fixture for an independent oracle. Live delivery executes it with zero skips."
+    },
+    {
+      "file": "Phase2Tests/Phase2QualificationGateComposerTests.swift",
+      "method": "testExplicitSignedStandardGateProducesCertifiedF4AArtifact",
+      "reason": "Real signed Gate F4C qualification is intentionally closed behind an explicit environment opt-in."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionInstalledPauseQualificationBarrierTests.swift",
+      "method": "testNamedRunnerContainerRootHoldsPauseUntilCreateOnlyRelease",
+      "reason": "Exercises the named installed UI runner container and skips only when that external runner temporary directory has not been created on the host; the explicit owned-root barrier case remains unconditional."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionInstalledPauseQualificationBarrierTests.swift",
+      "method": "testSharedRootAuthorityAcceptsRevealLeafOnlyInNamedRunnerContainer",
+      "reason": "Exercises Reveal-root admission inside the named installed UI runner container and skips only when that external runner temporary directory is absent; ordinary root mode, parent, and link rejection remains unconditional."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionSourceExecutionLeaseTests.swift",
+      "method": "testAcknowledgedConfinedLauncherHasRealExitAndCleanup",
+      "reason": "The confined-launcher validation uses the opt-in compiled SourceExecutionRunner path when available; otherwise its same-file launcher helper skips because the runner was not built for this process."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionSourceExecutionLeaseTests.swift",
+      "method": "testCPUlightResidentAllocationIsTerminatedWithCleanup",
+      "reason": "The CPU and resident-memory enforcement case depends on the opt-in compiled SourceExecutionRunner and skips when that runner is unavailable."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionSourceExecutionLeaseTests.swift",
+      "method": "testDiagnosticOverflowTerminatesAndRetainsOnlyBoundedBytes",
+      "reason": "The diagnostic-overflow process case depends on the opt-in compiled SourceExecutionRunner and skips when that runner is unavailable."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionSourceExecutionLeaseTests.swift",
+      "method": "testFullInspectionAdmitsArithmeticAndRejectsHarnessSpoofBeforeCompile",
+      "reason": "The source inspection and harness-spoof case depends on the opt-in compiled SourceExecutionRunner and skips when that runner is unavailable."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionSourceExecutionLeaseTests.swift",
+      "method": "testGroupSamplingIncludesDescendantsAndUnavailableFailsClosed",
+      "reason": "The descendant process-sampling check is explicitly opt-in and skips unless local owned-process sampling is enabled."
+    },
+    {
+      "file": "Phase2Tests/ReconstructionSourceExecutionLeaseTests.swift",
+      "method": "testWallDeadlineAndCancellationCleanOwnedGroup",
+      "reason": "The wall-deadline and cancellation process case depends on the opt-in compiled SourceExecutionRunner and skips when that runner is unavailable."
+    }
+  ]
+}

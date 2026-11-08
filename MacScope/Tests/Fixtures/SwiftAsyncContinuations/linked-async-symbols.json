@@ -1,0 +1,355 @@
+{
+  "basis": "Unstripped linked symbols; no DWARF available",
+  "functions": [
+    {
+      "entry": 4294971520,
+      "partials": [
+        {
+          "address": 4294971596,
+          "kind": "Q",
+          "symbol": "_$s5async7computeyS2iYaFTQ0_"
+        },
+        {
+          "address": 4294971668,
+          "kind": "Y",
+          "symbol": "_$s5async7computeyS2iYaFTY1_"
+        }
+      ],
+      "pointer": 4294979232,
+      "symbol": "_$s5async7computeyS2iYaF"
+    },
+    {
+      "entry": 4294971692,
+      "partials": [
+        {
+          "address": 4294971716,
+          "kind": "Y",
+          "symbol": "_$s5async7checkedyS2iYaKFTY0_"
+        },
+        {
+          "address": 4294971872,
+          "kind": "Q",
+          "symbol": "_$s5async7checkedyS2iYaKFTQ1_"
+        },
+        {
+          "address": 4294971992,
+          "kind": "Q",
+          "symbol": "_$s5async7checkedyS2iYaKFTQ2_"
+        }
+      ],
+      "pointer": 4294979240,
+      "symbol": "_$s5async7checkedyS2iYaKF"
+    },
+    {
+      "entry": 4294972128,
+      "partials": [
+        {
+          "address": 4294972228,
+          "kind": "Q",
+          "symbol": "_$s5async6onMainyS2iYaFTQ0_"
+        },
+        {
+          "address": 4294972408,
+          "kind": "Y",
+          "symbol": "_$s5async6onMainyS2iYaFTY1_"
+        },
+        {
+          "address": 4294972464,
+          "kind": "Y",
+          "symbol": "_$s5async6onMainyS2iYaFTY2_"
+        }
+      ],
+      "pointer": 4294979248,
+      "symbol": "_$s5async6onMainyS2iYaF"
+    },
+    {
+      "entry": 4294972516,
+      "partials": [
+        {
+          "address": 4294972636,
+          "kind": "Q",
+          "symbol": "_$s5async7groupedSiyYaFTQ0_"
+        },
+        {
+          "address": 4294972708,
+          "kind": "Y",
+          "symbol": "_$s5async7groupedSiyYaFTY1_"
+        }
+      ],
+      "pointer": 4294979256,
+      "symbol": "_$s5async7groupedSiyYaF"
+    },
+    {
+      "entry": 4294972716,
+      "partials": [
+        {
+          "address": 4294972868,
+          "kind": "Y",
+          "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_TY0_"
+        },
+        {
+          "address": 4294973396,
+          "kind": "Q",
+          "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_TQ1_"
+        },
+        {
+          "address": 4294973468,
+          "kind": "Y",
+          "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_TY2_"
+        }
+      ],
+      "pointer": 4294979264,
+      "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_"
+    },
+    {
+      "entry": 4294973676,
+      "partials": [
+        {
+          "address": 4294973756,
+          "kind": "Q",
+          "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_SiyYacfU_TQ0_"
+        },
+        {
+          "address": 4294973836,
+          "kind": "Y",
+          "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_SiyYacfU_TY1_"
+        }
+      ],
+      "pointer": 4294979656,
+      "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_SiyYacfU_"
+    },
+    {
+      "entry": 4294973856,
+      "partials": [
+        {
+          "address": 4294974064,
+          "kind": "Y",
+          "symbol": "_$s5async9streamSumSiyYaFTY0_"
+        },
+        {
+          "address": 4294974260,
+          "kind": "Q",
+          "symbol": "_$s5async9streamSumSiyYaFTQ1_"
+        },
+        {
+          "address": 4294974332,
+          "kind": "Y",
+          "symbol": "_$s5async9streamSumSiyYaFTY2_"
+        }
+      ],
+      "pointer": 4294979272,
+      "symbol": "_$s5async9streamSumSiyYaF"
+    },
+    {
+      "entry": 4294974884,
+      "partials": [
+        {
+          "address": 4294974972,
+          "kind": "Q",
+          "symbol": "_$s5async3AppV4mainyyYaFZTQ0_"
+        }
+      ],
+      "pointer": 4294979304,
+      "symbol": "_$s5async3AppV4mainyyYaFZ"
+    },
+    {
+      "entry": 4294975032,
+      "partials": [
+        {
+          "address": 4294975128,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZSiyYacfU_TY0_"
+        },
+        {
+          "address": 4294975232,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZSiyYacfU_TY1_"
+        }
+      ],
+      "pointer": 4294979592,
+      "symbol": "_$s5async3AppV4mainyyYaFZSiyYacfU_"
+    },
+    {
+      "entry": 4294975292,
+      "partials": [
+        {
+          "address": 4294975404,
+          "kind": "Q",
+          "symbol": "_$s5async3AppV5$mainyyYaFZTQ0_"
+        },
+        {
+          "address": 4294975504,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV5$mainyyYaFZTY1_"
+        }
+      ],
+      "pointer": 4294979320,
+      "symbol": "_$s5async3AppV5$mainyyYaFZ"
+    },
+    {
+      "entry": 4294975644,
+      "partials": [
+        {
+          "address": 4294975756,
+          "kind": "Q",
+          "symbol": "_$sIetH_yts5Error_pIegHrzo_TR10async_MainTf3npf_nTQ0_"
+        },
+        {
+          "address": 4294975856,
+          "kind": "Y",
+          "symbol": "_$sIetH_yts5Error_pIegHrzo_TR10async_MainTf3npf_nTY1_"
+        }
+      ],
+      "pointer": 4294979328,
+      "symbol": "_$sIetH_yts5Error_pIegHrzo_TR10async_MainTf3npf_n"
+    },
+    {
+      "entry": 4294975892,
+      "partials": [
+        {
+          "address": 4294975992,
+          "kind": "Q",
+          "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_TG5TQ0_"
+        }
+      ],
+      "pointer": 4294979664,
+      "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_TG5"
+    },
+    {
+      "entry": 4294976056,
+      "partials": [
+        {
+          "address": 4294978608,
+          "kind": "Q",
+          "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRSi_TG5TQ0_"
+        }
+      ],
+      "pointer": 4294979608,
+      "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRSi_TG5"
+    },
+    {
+      "entry": 4294976156,
+      "partials": [
+        {
+          "address": 4294976308,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTY0_"
+        },
+        {
+          "address": 4294976844,
+          "kind": "Q",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTQ1_"
+        },
+        {
+          "address": 4294976920,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTY2_"
+        },
+        {
+          "address": 4294977000,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTY3_"
+        },
+        {
+          "address": 4294977096,
+          "kind": "Q",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTQ4_"
+        },
+        {
+          "address": 4294977172,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTY5_"
+        },
+        {
+          "address": 4294977264,
+          "kind": "Q",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTQ6_"
+        },
+        {
+          "address": 4294977340,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTY7_"
+        },
+        {
+          "address": 4294977432,
+          "kind": "Q",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTQ8_"
+        },
+        {
+          "address": 4294977508,
+          "kind": "Y",
+          "symbol": "_$s5async3AppV4mainyyYaFZTf4d_nTY9_"
+        }
+      ],
+      "pointer": 4294979312,
+      "symbol": "_$s5async3AppV4mainyyYaFZTf4d_n"
+    },
+    {
+      "entry": 4294978056,
+      "partials": [
+        {
+          "address": 4294974972,
+          "kind": "Q",
+          "symbol": "_$s5async3AppV4mainyyYaFZSiyYacfU_TATQ0_"
+        }
+      ],
+      "pointer": 4294979600,
+      "symbol": "_$s5async3AppV4mainyyYaFZSiyYacfU_TA"
+    },
+    {
+      "entry": 4294978180,
+      "partials": [
+        {
+          "address": 4294978604,
+          "kind": "Q",
+          "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRSi_TG5TATQ0_"
+        }
+      ],
+      "pointer": 4294979616,
+      "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzs5NeverORs_r0_lTRSi_TG5TA"
+    },
+    {
+      "entry": 4294978400,
+      "partials": [
+        {
+          "address": 4294978604,
+          "kind": "Q",
+          "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_SiyYacfU_TATQ0_"
+        }
+      ],
+      "pointer": 4294979672,
+      "symbol": "_$s5async7groupedSiyYaFSiScGySiGzYaXEfU_SiyYacfU_TA"
+    },
+    {
+      "entry": 4294978488,
+      "partials": [
+        {
+          "address": 4294974972,
+          "kind": "Q",
+          "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_TG5TATQ0_"
+        }
+      ],
+      "pointer": 4294979680,
+      "symbol": "_$sxIeAgHr_xs5Error_pIegHrzo_s8SendableRzlTRSi_TG5TA"
+    }
+  ],
+  "imageName": "async",
+  "retainedCensusCounts": {
+    "associated": 0,
+    "asyncContinuation": 20,
+    "asyncEntry": 14,
+    "asyncPointer": 14,
+    "asyncResume": 17,
+    "builtin": 0,
+    "capture": 4,
+    "multiPayloadEnum": 0,
+    "opaque": 0,
+    "types2": 0,
+    "valueWitness": 1
+  },
+  "symbolCounts": {
+    "TQ": 21,
+    "TY": 20,
+    "Tu": 18
+  }
+}

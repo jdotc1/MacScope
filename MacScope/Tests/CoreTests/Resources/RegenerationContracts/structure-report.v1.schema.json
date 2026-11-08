@@ -1,0 +1,288 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "macscope:structure-report:1",
+  "title": "Equivalence/STRUCTURE-REPORT.json v1 (RG6)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "macScopeSHA",
+    "generatedAt",
+    "original",
+    "rebuilt",
+    "dimensions",
+    "externalExcluded",
+    "bindiff"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "macScopeSHA": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "original": {
+      "$ref": "#/$defs/input"
+    },
+    "rebuilt": {
+      "$ref": "#/$defs/input"
+    },
+    "dimensions": {
+      "type": "array",
+      "description": "exactly one entry per dimension, in the order of the dimension enum (README lists it); a dimension that could not be read is present with status notMeasured",
+      "items": {
+        "type": "object",
+        "required": [
+          "dimension",
+          "status",
+          "matched",
+          "missingInRebuilt",
+          "extraInRebuilt",
+          "differing",
+          "score",
+          "items"
+        ],
+        "properties": {
+          "dimension": {
+            "enum": [
+              "linkedDylibs",
+              "rpaths",
+              "exports",
+              "imports",
+              "objcClasses",
+              "objcCategories",
+              "objcProtocols",
+              "objcMethods",
+              "objcIvars",
+              "objcProperties",
+              "swiftTypes",
+              "swiftConformances",
+              "swiftRequirements",
+              "swiftFieldRecords",
+              "swiftEnumCases",
+              "functions"
+            ]
+          },
+          "status": {
+            "enum": [
+              "measured",
+              "notMeasured"
+            ]
+          },
+          "notMeasuredReason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "matched": {
+            "type": "integer"
+          },
+          "missingInRebuilt": {
+            "type": "integer"
+          },
+          "extraInRebuilt": {
+            "type": "integer"
+          },
+          "differing": {
+            "type": "integer"
+          },
+          "score": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "matched / (matched + missing + extra + differing); null when the denominator is 0 or notMeasured"
+          },
+          "items": {
+            "type": "array",
+            "description": "complete list of every non-matched item; matched items are counted, not listed",
+            "items": {
+              "type": "object",
+              "required": [
+                "key",
+                "outcome",
+                "original",
+                "rebuilt"
+              ],
+              "properties": {
+                "key": {
+                  "type": "string"
+                },
+                "outcome": {
+                  "enum": [
+                    "missingInRebuilt",
+                    "extraInRebuilt",
+                    "differing"
+                  ]
+                },
+                "original": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "rebuilt": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "notMeasured"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "notMeasuredReason": {
+                  "type": "string"
+                },
+                "matched": {
+                  "const": 0
+                },
+                "missingInRebuilt": {
+                  "const": 0
+                },
+                "extraInRebuilt": {
+                  "const": 0
+                },
+                "differing": {
+                  "const": 0
+                },
+                "score": {
+                  "type": "null"
+                },
+                "items": {
+                  "maxItems": 0
+                }
+              },
+              "required": [
+                "notMeasuredReason"
+              ]
+            }
+          }
+        ]
+      },
+      "minItems": 16,
+      "maxItems": 16
+    },
+    "functionStates": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "paired functions counted by manifest state; null when no manifest was given",
+      "properties": {
+        "stub": {
+          "type": "integer"
+        },
+        "filled": {
+          "type": "integer"
+        },
+        "compiles": {
+          "type": "integer"
+        },
+        "accepted": {
+          "type": "integer"
+        },
+        "external": {
+          "type": "integer"
+        },
+        "unpaired": {
+          "type": "integer"
+        }
+      }
+    },
+    "externalExcluded": {
+      "type": "object",
+      "required": [
+        "functions",
+        "symbols"
+      ],
+      "properties": {
+        "functions": {
+          "type": "integer"
+        },
+        "symbols": {
+          "type": "integer"
+        }
+      }
+    },
+    "bindiff": {
+      "type": "object",
+      "required": [
+        "available"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pairedFunctions": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "meanSimilarity": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "input": {
+      "type": "object",
+      "required": [
+        "path",
+        "fileSha256",
+        "sliceSha256",
+        "architecture",
+        "uuid"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "fileSha256": {
+          "type": "string",
+          "description": "of the whole file as read"
+        },
+        "sliceSha256": {
+          "type": "string",
+          "description": "of the compared slice bytes; same definition as REGEN-MANIFEST app.images[].sha256"
+        },
+        "architecture": {
+          "type": "string"
+        },
+        "uuid": {
+          "type": "string",
+          "description": "LC_UUID of the compared slice"
+        }
+      }
+    }
+  }
+}

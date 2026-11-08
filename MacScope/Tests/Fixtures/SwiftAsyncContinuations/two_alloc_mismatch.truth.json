@@ -1,0 +1,25 @@
+{
+  "callee": 4160,
+  "entryMetadataCount": 2,
+  "instructionWords": [
+    2853569523,
+    2483028031,
+    2852127735,
+    2483028029,
+    2852127736,
+    4177527539,
+    268436041,
+    4177528585,
+    2853635062,
+    335544327
+  ],
+  "kind": "two_alloc_mismatch",
+  "negative": true,
+  "relationships": [],
+  "resume": 4192,
+  "resumeMetadataCount": 1,
+  "schemaVersion": 1,
+  "source": 4096,
+  "synthetic": true,
+  "transfer": 4132
+}

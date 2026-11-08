@@ -1,0 +1,20 @@
+{
+  "schema": "macscope-rg3-c-body-request-v1",
+  "image": {
+    "imageSlot": 0,
+    "selectedSliceIndex": 0,
+    "architecture": "arm64",
+    "selectedSliceSHA256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "analysisFingerprintSHA256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "functions": [
+    {
+      "functionUUID": "11111111-2222-3333-4444-555555555555",
+      "address": "0x00000001000004b0",
+      "endAddressExclusive": "0x0000000100000580",
+      "name": "_func0",
+      "language": "c",
+      "emittedSymbol": "msrg_recovered_11111111222233334444555555555555"
+    }
+  ]
+}
