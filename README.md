@@ -82,7 +82,7 @@ imported reports.
 | Debugger | **Local macOS ARM64** only; even local attach can be denied by code signing, SIP, entitlement, ownership, or target policy. |
 | Explicit exclusions | Remote, x86, or Windows debugging; Windows decompilation; AArch32/Thumb, i386, PowerPC, and Hexagon disassembly/analysis. |
 | AI | Local **MTPLX** integration under app-owned read/tool authorization. |
-| Distribution | Signed and notarized builds are published on the repository's [Releases](https://github.com/jdotc1/MacScope/releases) page, free and MIT-licensed. You can also build from source. |
+| Distribution | The first signed and notarized build is being prepared and will be posted on the repository's [Releases](https://github.com/jdotc1/MacScope/releases) page, free and MIT-licensed. Until then, build from source. |
 
 These are intentional product and platform boundaries, not a claim of
 matching any external disassembler/decompiler. See the binding
@@ -93,8 +93,8 @@ current installed or behaviorally equivalent performance.
 
 ## Getting started for developers
 
-Signed and notarized builds are published on the repository's
-[Releases](https://github.com/jdotc1/MacScope/releases) page (free, MIT-licensed). You can also build
+The first signed and notarized build is being prepared and will be posted on the repository's
+[Releases](https://github.com/jdotc1/MacScope/releases) page (free, MIT-licensed). Until then, build
 from source. Clone with submodules (`git clone --recurse-submodules`;
 `ThirdParty/Lumen` is a submodule). On a prepared Apple-silicon development Mac with the pinned
 dependencies and your own local signing identity (see below), run from
